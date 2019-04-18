@@ -9,29 +9,29 @@
 <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
   <title>Set up development environment | Saros</title>
   <style type="text/css" media="all">
-@import url("modules/system/system.base.css%3Fp9abym.css");
-@import url("modules/system/system.menus.css%3Fp9abym.css");
-@import url("modules/system/system.messages.css%3Fp9abym.css");
-@import url("modules/system/system.theme.css%3Fp9abym.css");
+@import url("modules/system/system.base.css");
+@import url("modules/system/system.menus.css");
+@import url("modules/system/system.messages.css");
+@import url("modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
-@import url("sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
-@import url("modules/book/book.css%3Fp9abym.css");
-@import url("modules/comment/comment.css%3Fp9abym.css");
-@import url("modules/field/theme/field.css%3Fp9abym.css");
-@import url("modules/node/node.css%3Fp9abym.css");
-@import url("modules/search/search.css%3Fp9abym.css");
-@import url("sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
-@import url("modules/user/user.css%3Fp9abym.css");
-@import url("modules/forum/forum.css%3Fp9abym.css");
+@import url("sites/all/modules/ldap/ldap_user/ldap_user.css");
+@import url("modules/book/book.css");
+@import url("modules/comment/comment.css");
+@import url("modules/field/theme/field.css");
+@import url("modules/node/node.css");
+@import url("modules/search/search.css");
+@import url("sites/all/modules/toc_filter/toc_filter.css");
+@import url("modules/user/user.css");
+@import url("modules/forum/forum.css");
 </style>
 <style type="text/css" media="all">
-@import url("sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
-@import url("sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+@import url("sites/all/modules/ctools/css/ctools.css");
+@import url("sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css");
 </style>
 <style type="text/css" media="all">
-@import url("sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
-@import url("sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+@import url("sites/saros-project.org/themes/touch/style.css");
+@import url("sites/saros-project.org/themes/saros/saros_style.css");
 </style>
   <script type="text/javascript" src="misc/jquery.js%3Fv=1.4.4.html"></script>
 <script type="text/javascript" src="misc/jquery.once.js%3Fv=1.2.html"></script>
@@ -54,7 +54,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <div id="logo"><!--start logo-->
       <a id="site_name_link" href="index.html" title="Home">
-      <img src="sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+      <img src="sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
     </a>
     
   <div id="name_slogan">
@@ -212,25 +212,25 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <li><a href="setup-netbeans-environment.html#saros-changes">Making Changes to Netbeans Saros</a></li>
 <li><a href="setup-netbeans-environment.html#troubleshooting">Troubleshooting</a></li>
 </ul><h3><a name="set-sdk" id="set-sdk"></a>Set the JDK</h3>
-<ol><li>Select "Java Platforms" from the Tools Menu<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/java_platform.png.html" style="max-width: 100%" /></li>
-<li>If the JDK 1.7 is not the selected one, press "Add Platform", browse to your Java folder and select the JDK 1.7<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/java_platform2.png.html" style="max-width: 100%" /></li>
+<ol><li>Select "Java Platforms" from the Tools Menu<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/java_platform.png" style="max-width: 100%" /></li>
+<li>If the JDK 1.7 is not the selected one, press "Add Platform", browse to your Java folder and select the JDK 1.7<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/java_platform2.png" style="max-width: 100%" /></li>
 </ol><h3><a name="open-and-run" id="open-and-run"></a>Step-by-Step: Open and Run the Saros Source Code </h3>
 <p>Assuming that you already retrieved the sources, you can now open the Netbeans Saros plugin project.</p>
-<ol><li>Select "Open Project"<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/open_project.png.html" style="max-width: 100%" /></li>
-<li>Browse to the Saros source code folder, select the Saros Core and the Saros Netbeans Modul Suite, enable "Open Required Projects" and click "Open Projects"<br /><img alt="" src="sites/saros-project.org/files/DevDocumentation/saros-n/open_project2.png.html" style="max-width: 100%" /></li>
-<li>The Saros Core Project, the Saros Netbeans Modul Suite and it's containing Moduls Saros and SarosCoreWrapper are displayed in the Project View of the Netbeans IDE<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/open_project3.png.html" style="max-width: 100%" /></li>
-<li>Clean and Build the Saros Netbeans Modul Suite cleans and builds the SarosCoreWrapper Modul and the Saros Core too<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/clean_and_build_saros.png.html" style="max-width: 100%" /></li>
-<li>Run the Saros Netbeans Modul Suite<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/run.png.html" style="max-width: 100%" /></li>
+<ol><li>Select "Open Project"<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/open_project.png" style="max-width: 100%" /></li>
+<li>Browse to the Saros source code folder, select the Saros Core and the Saros Netbeans Modul Suite, enable "Open Required Projects" and click "Open Projects"<br /><img alt="" src="sites/saros-project.org/files/DevDocumentation/saros-n/open_project2.png" style="max-width: 100%" /></li>
+<li>The Saros Core Project, the Saros Netbeans Modul Suite and it's containing Moduls Saros and SarosCoreWrapper are displayed in the Project View of the Netbeans IDE<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/open_project3.png" style="max-width: 100%" /></li>
+<li>Clean and Build the Saros Netbeans Modul Suite cleans and builds the SarosCoreWrapper Modul and the Saros Core too<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/clean_and_build_saros.png" style="max-width: 100%" /></li>
+<li>Run the Saros Netbeans Modul Suite<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/run.png" style="max-width: 100%" /></li>
 </ol><h2><a name="saros-changes" id="saros-changes"></a>Making changes to Saros</h2>
-<ul><li>The Saros Modul within the Saros Netbeans Modul Suite contains the main source code for the Saros Netbeans Plugin.<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/develop.png.html" style="max-width: 100%" /></li>
-<li>The build.xml file within the SarosCoreWrapper Modul contains the ant-instructions for cleaning and building the Core and where to save the build-Files<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/core_wrapper_build_xml.png.html" style="max-width: 100%" /></li>
-<li>The project.xml within the SarosCoreWrapper Modul declares the public packages of the Core, that are visible to the Netbeans Saros Modul<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/core_wrapper_project_xml.png.html" style="max-width: 100%" /></li>
+<ul><li>The Saros Modul within the Saros Netbeans Modul Suite contains the main source code for the Saros Netbeans Plugin.<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/develop.png" style="max-width: 100%" /></li>
+<li>The build.xml file within the SarosCoreWrapper Modul contains the ant-instructions for cleaning and building the Core and where to save the build-Files<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/core_wrapper_build_xml.png" style="max-width: 100%" /></li>
+<li>The project.xml within the SarosCoreWrapper Modul declares the public packages of the Core, that are visible to the Netbeans Saros Modul<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/core_wrapper_project_xml.png" style="max-width: 100%" /></li>
 </ul><h2><a name="troubleshooting" id="troubleshooting"></a>Troubleshooting</h2>
 <p>The JUnit Plugin is missing</p>
-<ol><li>This message is shown if the JUnit plugin is deactivated or not installed. Click "Resolve Problems".<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/junit.png.html" style="max-width: 100%" /></li>
-<li>The Project Problems are listed and a solution is suggested. Click "Resolve".<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/junit2.png.html" style="max-width: 100%" /></li>
-<li>Alternatively you can activate or install the JUnit Plugin via the "Plugins" Menu<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/plugins.png.html" style="max-width: 100%" /></li>
-<li>Activate the JUnit Plugin, or if it's not installed, search for the Plugin in the list of "Available Plugins" and install it.<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/plugins4.png.html" style="max-width: 100%" /></li>
+<ol><li>This message is shown if the JUnit plugin is deactivated or not installed. Click "Resolve Problems".<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/junit.png" style="max-width: 100%" /></li>
+<li>The Project Problems are listed and a solution is suggested. Click "Resolve".<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/junit2.png" style="max-width: 100%" /></li>
+<li>Alternatively you can activate or install the JUnit Plugin via the "Plugins" Menu<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/plugins.png" style="max-width: 100%" /></li>
+<li>Activate the JUnit Plugin, or if it's not installed, search for the Plugin in the list of "Available Plugins" and install it.<br /><img alt="Opening projects" src="sites/saros-project.org/files/DevDocumentation/saros-n/plugins4.png" style="max-width: 100%" /></li>
 </ol></div></div></div>  </div>
 
       <footer>

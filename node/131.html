@@ -12,29 +12,29 @@
 <link rel="prev" href="../gerrit-review.html" />
   <title>Someone uploaded a change to Gerrit. How can I test this change? | Saros</title>
   <style type="text/css" media="all">
-@import url("../modules/system/system.base.css%3Fp9abym.css");
-@import url("../modules/system/system.menus.css%3Fp9abym.css");
-@import url("../modules/system/system.messages.css%3Fp9abym.css");
-@import url("../modules/system/system.theme.css%3Fp9abym.css");
+@import url("../modules/system/system.base.css");
+@import url("../modules/system/system.menus.css");
+@import url("../modules/system/system.messages.css");
+@import url("../modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
-@import url("../modules/book/book.css%3Fp9abym.css");
-@import url("../modules/comment/comment.css%3Fp9abym.css");
-@import url("../modules/field/theme/field.css%3Fp9abym.css");
-@import url("../modules/node/node.css%3Fp9abym.css");
-@import url("../modules/search/search.css%3Fp9abym.css");
-@import url("../sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
-@import url("../modules/user/user.css%3Fp9abym.css");
-@import url("../modules/forum/forum.css%3Fp9abym.css");
+@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css");
+@import url("../modules/book/book.css");
+@import url("../modules/comment/comment.css");
+@import url("../modules/field/theme/field.css");
+@import url("../modules/node/node.css");
+@import url("../modules/search/search.css");
+@import url("../sites/all/modules/toc_filter/toc_filter.css");
+@import url("../modules/user/user.css");
+@import url("../modules/forum/forum.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
-@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+@import url("../sites/all/modules/ctools/css/ctools.css");
+@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
-@import url("../sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+@import url("../sites/saros-project.org/themes/touch/style.css");
+@import url("../sites/saros-project.org/themes/saros/saros_style.css");
 </style>
   <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4.html"></script>
 <script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2.html"></script>
@@ -57,7 +57,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <div id="logo"><!--start logo-->
       <a id="site_name_link" href="../index.html" title="Home">
-      <img src="../sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+      <img src="../sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
     </a>
     
   <div id="name_slogan">
@@ -204,32 +204,32 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <ol class="procedure" type="1"><li class="step" title="Select Fetch From Gerrit">
 <p class="title"><b>Select <span class="guimenuitem">Fetch from Gerrit</span></b></p>
 <p><strong>Right click on your project <i>Saros</i></strong> and select <strong><span class="guimenu">Team</span></strong> → <strong><span class="guimenuitem">Remote </span></strong>→ <strong><span class="guimenuitem">Fetch From Gerrit..</span></strong>.</p>
-<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/1.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/1.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Select a change by CTRL+I">
 <p class="title"><b>Fetch list of Changes</b></p>
 <p><strong>Click on the <em>Change</em> field</strong> and <strong>use CTRL+SPACE </strong>to fetch a list of available changes.</p>
-<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/2.png.html" style="width: 438px; height: 414px;" /></div>
+<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/2.png" style="width: 438px; height: 414px;" /></div>
 </li>
 <li class="step" title="Select a change from the dropdown">
 <p class="title"><strong>Select a change from the dropdown list</strong></p>
 <p>Select the change you want to modify. The entry "750 - 1" represents the 1st patch set of change no. 750, i.e. <a href="http://saros-build.imp.fu-berlin.de/gerrit/#/c/750/1">http://saros-build.imp.fu-berlin.de/gerrit/#/c/750/1</a>.</p>
-<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/3.png.html" style="width: 457px; height: 414px;" /></p>
+<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/3.png" style="width: 457px; height: 414px;" /></p>
 </li>
 <li class="step" title="Select a change from the dropdown">
 <p class="title"><b>Select a change from the dropdown</b></p>
 <p>After selecting a change the wizard will fill in the matching Git refspec, e.g. refs/changes/50/750/1.<br />EGit will create and checkout the change in a new branch. Click <strong><span class="guibutton">Finish</span></strong></p>
-<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/4.png.html" style="width: 457px; height: 414px;" /></div>
+<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/4.png" style="width: 457px; height: 414px;" /></div>
 </li>
 <li class="step" title="Create a local branch">
 <p class="title"><b>Wait</b></p>
 <p>This may take some time.</p>
-<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/5.png.html" style="width: 457px; height: 414px;" /></p>
+<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/5.png" style="width: 457px; height: 414px;" /></p>
 </li>
 <li class="step" title="Switched to local branch">
 <p class="title"><b><b>Switched to local branch</b></b></p>
 <p>EGit will indicate that it switched to your new branch.</p>
-<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/6.png.html" style="width: 224px; height: 246px;" /></p>
+<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/test-change/6.png" style="width: 224px; height: 246px;" /></p>
 </li>
 </ol></div></div></div>  <div id="book-navigation-129" class="book-navigation">
     

@@ -12,29 +12,29 @@
 <link rel="prev" href="144.html" />
   <title>Someone discovered an error/failure/typo. How can I upload a new patch set? | Saros</title>
   <style type="text/css" media="all">
-@import url("../modules/system/system.base.css%3Fp9abym.css");
-@import url("../modules/system/system.menus.css%3Fp9abym.css");
-@import url("../modules/system/system.messages.css%3Fp9abym.css");
-@import url("../modules/system/system.theme.css%3Fp9abym.css");
+@import url("../modules/system/system.base.css");
+@import url("../modules/system/system.menus.css");
+@import url("../modules/system/system.messages.css");
+@import url("../modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
-@import url("../modules/book/book.css%3Fp9abym.css");
-@import url("../modules/comment/comment.css%3Fp9abym.css");
-@import url("../modules/field/theme/field.css%3Fp9abym.css");
-@import url("../modules/node/node.css%3Fp9abym.css");
-@import url("../modules/search/search.css%3Fp9abym.css");
-@import url("../sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
-@import url("../modules/user/user.css%3Fp9abym.css");
-@import url("../modules/forum/forum.css%3Fp9abym.css");
+@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css");
+@import url("../modules/book/book.css");
+@import url("../modules/comment/comment.css");
+@import url("../modules/field/theme/field.css");
+@import url("../modules/node/node.css");
+@import url("../modules/search/search.css");
+@import url("../sites/all/modules/toc_filter/toc_filter.css");
+@import url("../modules/user/user.css");
+@import url("../modules/forum/forum.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
-@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+@import url("../sites/all/modules/ctools/css/ctools.css");
+@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
-@import url("../sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+@import url("../sites/saros-project.org/themes/touch/style.css");
+@import url("../sites/saros-project.org/themes/saros/saros_style.css");
 </style>
   <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4.html"></script>
 <script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2.html"></script>
@@ -57,7 +57,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <div id="logo"><!--start logo-->
       <a id="site_name_link" href="../index.html" title="Home">
-      <img src="../sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+      <img src="../sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
     </a>
     
   <div id="name_slogan">
@@ -203,52 +203,52 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><ol class="procedure" type="1"><li class="step" title="Fetch from Gerrit">
 <p class="title"><b>Fetch from Gerrit</b></p>
 <p><strong>Right click <em>Saros</em></strong> and select <strong><span class="guimenuitem">Team</span></strong> → <strong><span class="guimenuitem">Remote</span></strong> → <strong><span class="guimenuitem">Fetch from Gerrit...</span></strong></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/01.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/01.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Select a Change">
 <p class="title"><b>Fetch list of changes</b></p>
 <div class="note" title="Eclipse hint">
 <h3 class="title">Gerrit hint</h3>
 <p>You can determine the change number of a change from the individual change page in the download command. You can also just take the URI from there.</p>
-<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/02-hint.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/02-hint.png" style="max-width: 100%;" /></div>
 </div>
 <p><strong>Click on the <em>Change</em> field</strong> and <strong>use CTRL+Space</strong> to fetch a list of available changes. The format is the change number, followed by the patch set.<br />You can also enter the URI <strong>directly use e.g. refs/changes/47/47/3</strong>, the format is to give the last two digits of the change, followed by the complete change number and then select the patch set you want.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/02.png.html" style="max-width: 100%; width: 438px; height: 414px;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/02.png" style="max-width: 100%; width: 438px; height: 414px;" /></div>
 </li>
 <li class="step" title="Pick a local branch name">
 <p class="title"><strong>Select a change from the dropdown list</strong></p>
 <p>Select the change you want to modify. After selecting a change the number will be replaced with the URI of the change. In the string "mmm - n" the mmm stands for the <em>change number</em> and n for the n-th <em>patch set</em> of this change.</p>
-<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/03.png.html" style="width: 464px; height: 414px;" /></p>
+<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/03.png" style="width: 464px; height: 414px;" /></p>
 </li>
 <li class="step" title="Pick a local branch name">
 <p class="title"><b>Pick a local branch name</b></p>
 <p><strong>Select a name</strong> for the local branch. EGit will create and checkout the change in a new branch. Click <span class="guibutton">Finish</span></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/04.png.html" style="max-width: 100%; width: 438px; height: 414px;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/04.png" style="max-width: 100%; width: 438px; height: 414px;" /></div>
 </li>
 <li class="step" title="Start your modification">
 <p class="title"><b>Start your modification</b></p>
 <p>Now you are on the branch that contains your previous change. You are now able to do the desired modification.</p>
-<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/05.png.html" style="width: 330px; height: 197px;" /></div>
+<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/05.png" style="width: 330px; height: 197px;" /></div>
 </li>
 <li class="step" title="Amending your commit">
 <p class="title"><b>Open commit dialog</b></p>
 <p>Once you are done with your modification, <strong>right click on your project <em>Saros</em></strong> and select <strong><span class="guimenuitem">Team</span></strong> → <strong><span class="guimenuitem">Commit...</span></strong></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/06.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/06.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Amending your commit">
 <p class="title"><b>Amending your commit</b></p>
 <p><strong>Press the</strong><strong> amend button (left circle in the top right corner). </strong>The Gerrit button (right circle in the top right corner) will activate automatically.<br />This will combine your new and old change. The commit dialog will automatically pick the commit message from the previous commit and at its change ID. Gerrit needs the change ID to identify the this commit as a new patch set and not as a new change. You can also edit your commit message, if you like. Click <span class="guibutton">Commit</span><br />This will create a <em>local</em> commit of your change.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/07.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/07.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Pushing your commits">
 <p class="title"><b>Open push dialog</b></p>
 <p><strong>Right click <em>Saros</em></strong> and select <strong><span class="guimenuitem">Team</span></strong> → <strong><span class="guimenuitem">Remote</span></strong> → <strong><span class="guimenuitem">Push...</span></strong></p>
-<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/08.png.html" style="max-width: 100%;" /></p>
+<p><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/08.png" style="max-width: 100%;" /></p>
 </li>
 <li class="step" title="Pushing your commits">
 <p class="title"><b>Pushing your commits</b></p>
 <p>Select C<strong>onfigured remote repository</strong> and click <span class="guibutton">Next</span></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/09.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/09.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Deleting a branch">
 <p class="title"><b>Enter push specifications</b></p>
@@ -256,24 +256,24 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <ul><li>Source ref <strong>HEAD</strong></li>
 <li>Destination ref <strong>refs/for/master</strong></li>
 </ul><p>and click <span class="guibutton">Add Spec</span></p>
-<p><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/10.png.html" style="max-width: 100%;" /></p>
+<p><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/10.png" style="max-width: 100%;" /></p>
 </li>
 <li class="step" title="Deleting a branch">
 <p class="title"><b>Press Next</b></p>
 <p>Press <span class="guibutton">Next</span></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/11.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/11.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Deleting a branch">
 <div class="mediaobject">
 <p class="title"><b>Press Finish</b></p>
 <p>Review where your change is going to be pushed and click <span class="guibutton">Finish</span></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/12.png.html" style="max-width: 100%; width: 614px; height: 600px;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/12.png" style="max-width: 100%; width: 614px; height: 600px;" /></div>
 </div>
 </li>
 <li>
 <p class="title"><b>Push result</b></p>
 <p>You just pushed a new patch set to the Gerrit system and you can review it in Gerrit.</p>
-<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/13.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img alt="" src="../sites/saros-project.org/files/DevDocumentation/daily-faq/submit-new-patchset/13.png" style="max-width: 100%;" /></div>
 </li>
 </ol><div class="mediaobject"> </div>
 <div class="mediaobject">Now you can see your submitted patch set in <a href="http://saros-build.imp.fu-berlin.de/gerrit/">Gerrit</a> and <a href="142.html">delete your unused branch</a>.</div>

@@ -9,29 +9,29 @@
 <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
   <title>Saros HTML GUI | Saros</title>
   <style type="text/css" media="all">
-@import url("../modules/system/system.base.css%3Fp9abym.css");
-@import url("../modules/system/system.menus.css%3Fp9abym.css");
-@import url("../modules/system/system.messages.css%3Fp9abym.css");
-@import url("../modules/system/system.theme.css%3Fp9abym.css");
+@import url("../modules/system/system.base.css");
+@import url("../modules/system/system.menus.css");
+@import url("../modules/system/system.messages.css");
+@import url("../modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
-@import url("../modules/book/book.css%3Fp9abym.css");
-@import url("../modules/comment/comment.css%3Fp9abym.css");
-@import url("../modules/field/theme/field.css%3Fp9abym.css");
-@import url("../modules/node/node.css%3Fp9abym.css");
-@import url("../modules/search/search.css%3Fp9abym.css");
-@import url("../sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
-@import url("../modules/user/user.css%3Fp9abym.css");
-@import url("../modules/forum/forum.css%3Fp9abym.css");
+@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css");
+@import url("../modules/book/book.css");
+@import url("../modules/comment/comment.css");
+@import url("../modules/field/theme/field.css");
+@import url("../modules/node/node.css");
+@import url("../modules/search/search.css");
+@import url("../sites/all/modules/toc_filter/toc_filter.css");
+@import url("../modules/user/user.css");
+@import url("../modules/forum/forum.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
-@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+@import url("../sites/all/modules/ctools/css/ctools.css");
+@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
-@import url("../sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+@import url("../sites/saros-project.org/themes/touch/style.css");
+@import url("../sites/saros-project.org/themes/saros/saros_style.css");
 </style>
   <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4.html"></script>
 <script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2.html"></script>
@@ -54,7 +54,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <div id="logo"><!--start logo-->
       <a id="site_name_link" href="../index.html" title="Home">
-      <img src="../sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+      <img src="../sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
     </a>
     
   <div id="name_slogan">
@@ -236,7 +236,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <li>the Eclipse-specific part in the package <a href="https://github.com/saros-project/saros/tree/master/de.fu_berlin.inf.dpp/src/de/fu_berlin/inf/dpp/ui/browser"><code>de.fu_berlin.inf.dpp.ui.browser</code></a> and the class <a href="https://github.com/saros-project/saros/blob/master/de.fu_berlin.inf.dpp/src/de/fu_berlin/inf/dpp/ui/views/SarosViewBrowserVersion.java"><code>SarosViewBrowserVersion</code></a>,</li>
 <li>the IntelliJ-specific part in the package <a href="https://github.com/saros-project/saros/tree/master/de.fu_berlin.inf.dpp.intellij/src/de/fu_berlin/inf/dpp/intellij/ui/swt_browser"><code>de.fu_berlin.inf.dpp.intellij.ui.swt_browser</code></a>.</li>
 </ul><p>As the IDE-specific parts are only concerned with the embedding of the browser in the IDE and the creation of dialog windows, they probably do not have to change for regular development in the GUI. See the following figure for the relations between the relevant modules.</p>
-<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/ui-osgi-modules.png.html" style="width: 100%; max-width: 700px;" /></p>
+<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/ui-osgi-modules.png" style="width: 100%; max-width: 700px;" /></p>
 <div class="toc-filter-back-to-top"><a href="168.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="providing-functionality-the-java-part" id="providing-functionality-the-java-part" class="toc-bookmark" rel="bookmark" title="Providing functionality: The Java part"></a>Providing functionality: The Java part</h2>
 <p>In this section, the structure of the <code>de.fu_berlin.inf.dpp.ui</code> module and the interface between Java and JavaScript will be explained.</p>
 <h3>JBusTour</h3>
@@ -254,7 +254,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <pre><span _fck_bookmark="1" style="display: none;"> </span>browser.run("alert('Invalid input')");<span _fck_bookmark="1" style="display: none;"> </span></pre><p>The Java code inside the function will probably do parameter checking and conversion and then call a Saros core method. It is important to know that the callback happens on the UI thread. Use the PicoContainer to get references to core classes. Read on for information about how to structure your browser functions.</p>
 <h4>Structure of the Java code</h4>
 <p>The image below shows a selection of the relevant classes. It may be a useful illustration while reading this section.<br />The classes for the browser functions are left out as they are basically just a list of anonymous classes and their grouping may be changed often.</p>
-<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/browser_pages_0.png.html" style="width: 100%; max-width: 700px;" /></p>
+<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/browser_pages_0.png" style="width: 100%; max-width: 700px;" /></p>
 <p>There is already a mechanism to inject the browser functions into the corresponding websites. Each website is represented by a implementation of the <code>BrowserPage</code> interface.</p>
 <p><span _fck_bookmark="1" style="display: none;"> </span>The Java class <code>de.fu_berlin.inf.dpp.ui.webpages.SarosMainPage</code> represents the Saros main view including the roster and session tree, for example. Each <code>BrowserPage</code> implementation contains three pieces of information:</p>
 <ul><li>Where the corresponding HTML is located: <code>public String getWebpage()</code></li>
@@ -297,14 +297,14 @@ module.exports = AmpersandState.extend({
 <p>The convention is that every JavaScript file in the project holds exactly one module. An exception to that is the entrance point of the application, <code>html/src/app.js</code>, which therefore also doesn't need to be provided as a module.</p>
 <p>Furthermore, inside of each page's directory there is exactly one HTML file, which is responsible for rendering the corresponding content. Pages are different to elements as the view of a page always represents a closed entity in the Saros GUI, while the view of an element is contained by one or more other views.</p>
 <p>In the following figure, the relations between the named components of the application are visualised.</p>
-<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/ui-component-relations_0.png.html" style="width: 100%; max-width: 700px;" /></p>
+<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/ui-component-relations_0.png" style="width: 100%; max-width: 700px;" /></p>
 <p>In <code>html/css</code> one can find the internal CSS definitions (<code>html/src/css/saros.css</code>) as well as external. Unit tests are specified in <code>html/test</code>. The application bundle generated by the build process is placed in <code>html/dist/bundle</code>. All files, which are needed for the built ui-frontend OSGi module have to be copied to <code>html/dist</code>. This is done by the <code>copysrcs</code> script which is run automatically after every <code>npm run build</code> or right before every <code>npm run watch</code>. If new sources, which might not fit in the above described project structure, are added please make sure that they are handled by the script.</p>
 <h3>The JavaScript SarosApi module</h3>
 <p>The interface between Java and JavaScript on JavaScript-side is completely encapsulated in the SarosApi JavaScript object, afterwards called SarosApi, which lives in <code>html/js/saros-api.js</code>. The SarosAPI takes a role as a facade via hiding the injected functions provided by Java behind convenient functions. That way for example, instead of calling <code>__java_connect(account)</code> one can require the SarosApi and call the corresponding function like this:</p>
 <pre>var SarosApi = require('./saros-api');
 SarosApi.connect(account);
 </pre><p>In the other direction, the Java-to-JavaScript interface, the SarosApi serves as an event bus. Every JavaScript call made from Java should be done via triggering an event and passing data via <code>SarosApi.trigger('eventName', data)</code>. The JavaScript application can listen and respond to such events via <code>SarosApi.on('eventName', callbackFunction)</code>.The following figure visualises the interface between the ui module and the Saros GUI JavaScript application, schematically. The SarosApi serves as a middleware for the communication between the Java and JavaScript part. See <code>html/src/saros-api.js</code> for a list of currently used events.</p>
-<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/ui-ui-frontend-architecture.png.html" style="width: 100%; max-width: 700px;" /></p>
+<p style="text-align: center;"><img alt="" src="../sites/saros-project.org/files/ui-ui-frontend-architecture.png" style="width: 100%; max-width: 700px;" /></p>
 <div class="toc-filter-back-to-top"><a href="168.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="ease-the-development-process-tips-and-tools" id="ease-the-development-process-tips-and-tools" class="toc-bookmark" rel="bookmark" title="Ease the development process: Tips and tools"></a>Ease the development process: Tips and tools</h2>
 <h3>Make sure to be able to develop standalone</h3>
 <p>It is recommended to develop the HTML and JavaScript part in such a way that the webpage can be viewed in standalone web browsers. This way, the whole set of tools for regular web development, including debugging support, can be used. Otherwise JavaScript development in the embedded browser is rather cumbersome. To be able to do so you have to provide some data to the application, which is quite easy via the SarosApi object. For example, check the following code snippet which can be put into the <code>init</code> function in <code>html/src/app.js</code> (or you can run it in your browser console, for example):</p>

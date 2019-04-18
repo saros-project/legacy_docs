@@ -9,29 +9,29 @@
 <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
   <title>Overview | Saros</title>
   <style type="text/css" media="all">
-@import url("modules/system/system.base.css%3Fp9abym.css");
-@import url("modules/system/system.menus.css%3Fp9abym.css");
-@import url("modules/system/system.messages.css%3Fp9abym.css");
-@import url("modules/system/system.theme.css%3Fp9abym.css");
+@import url("modules/system/system.base.css");
+@import url("modules/system/system.menus.css");
+@import url("modules/system/system.messages.css");
+@import url("modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
-@import url("sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
-@import url("modules/book/book.css%3Fp9abym.css");
-@import url("modules/comment/comment.css%3Fp9abym.css");
-@import url("modules/field/theme/field.css%3Fp9abym.css");
-@import url("modules/node/node.css%3Fp9abym.css");
-@import url("modules/search/search.css%3Fp9abym.css");
-@import url("sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
-@import url("modules/user/user.css%3Fp9abym.css");
-@import url("modules/forum/forum.css%3Fp9abym.css");
+@import url("sites/all/modules/ldap/ldap_user/ldap_user.css");
+@import url("modules/book/book.css");
+@import url("modules/comment/comment.css");
+@import url("modules/field/theme/field.css");
+@import url("modules/node/node.css");
+@import url("modules/search/search.css");
+@import url("sites/all/modules/toc_filter/toc_filter.css");
+@import url("modules/user/user.css");
+@import url("modules/forum/forum.css");
 </style>
 <style type="text/css" media="all">
-@import url("sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
-@import url("sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+@import url("sites/all/modules/ctools/css/ctools.css");
+@import url("sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css");
 </style>
 <style type="text/css" media="all">
-@import url("sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
-@import url("sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+@import url("sites/saros-project.org/themes/touch/style.css");
+@import url("sites/saros-project.org/themes/saros/saros_style.css");
 </style>
   <script type="text/javascript" src="misc/jquery.js%3Fv=1.4.4.html"></script>
 <script type="text/javascript" src="misc/jquery.once.js%3Fv=1.2.html"></script>
@@ -54,7 +54,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <div id="logo"><!--start logo-->
       <a id="site_name_link" href="index.html" title="Home">
-      <img src="sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+      <img src="sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
     </a>
     
   <div id="name_slogan">
@@ -220,11 +220,11 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </li>
 </ul><div class="toc-filter-back-to-top"><a href="specoverview.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="-a-name-architecture-id-architecture-a-architecture" id="-a-name-architecture-id-architecture-a-architecture" class="toc-bookmark" rel="bookmark" title="Architecture"></a><a name="Architecture" id="Architecture"></a>Architecture</h2>
 <div>Since Saros is based on XMPP, it uses a server based architecture. Communication between clients is done by XMPP messages which are send over XMPP servers. Exchanging client actions (modifications, selection, project file operations,...) is done by wrapping activity descriptions in XMPP messages and sending them to other clients. An exception is the file transfer. Due to performance reasons it uses a peer to peer transfer. If this direct connection fails, Saros uses a fallback to file transfer over XMPP servers.</div>
-<div style="text-align: center;"><span _fck_bookmark="1" style="display: none;"> </span><img alt="" src="sites/saros-project.org/files/communication.png.html" style="width: 500px; height: 283px;" /><span _fck_bookmark="1" style="display: none;"> </span></div>
+<div style="text-align: center;"><span _fck_bookmark="1" style="display: none;"> </span><img alt="" src="sites/saros-project.org/files/communication.png" style="width: 500px; height: 283px;" /><span _fck_bookmark="1" style="display: none;"> </span></div>
 <div class="toc-filter-back-to-top"><a href="specoverview.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="-a-name-software-architecture-id-software-architecture-a-software-architecture" id="-a-name-software-architecture-id-software-architecture-a-software-architecture" class="toc-bookmark" rel="bookmark" title="Software Architecture"></a><a name="Software_Architecture" id="Software_Architecture"></a>Software Architecture</h2>
 <div>Saros uses a layer architecture and consists of eight major modules as you can see in the image below. The Whiteboard is an additional project which expands the functionality of the Saros plug-in.</div>
-<p><map name="links" id="links"><area alt="Shared Session" coords="164, 59, 539, 123" href="http://www.saros-project.org/sharedsession" shape="rect" title="shared Session" /><area alt="Concurrency Control" coords="308, 132, 436, 211" href="http://www.saros-project.org/concurrency" shape="rect" title="Concurrency Control" /><area alt="Invitation" coords="443, 132, 539, 211" href="http://www.saros-project.org/invitation" shape="rect" title="Invitation" /><area alt="Network Layer" coords="308, 220, 539, 283" href="http://www.saros-project.org/networklayer" shape="rect" title="Network Layer" /><area alt="UI" coords="236, 132, 299, 283" href="http://www.saros-project.org/ui" shape="rect" title="UI" /><area alt="Eclipse Bridge" coords="163, 132, 227, 283" href="http://www.saros-project.org/eclipsebridge" shape="rect" title="Eclipse Bridge" /></map></p>
-<!-- <area shape="rect" coords="92, 60, 155, 283" href="" alt="Ultility" title="Ultility"> --><p><area alt="Feedback" coords="20, 60, 83, 283" href="http://www.saros-project.org/feedback" shape="rect" title="Feedback" /><img alt="" src="http://saros-build.imp.fu-berlin.de/img/architecture/saros_high-level.svg" usemap="#links" /><br /></p><div class="toc-filter-back-to-top"><a href="specoverview.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="internal-dependency-management" id="internal-dependency-management" class="toc-bookmark" rel="bookmark" title="Internal Dependency Management"></a>Internal Dependency Management</h2>
+<p><map name="links" id="links"><area alt="Shared Session" coords="164, 59, 539, 123" href="./sharedsession" shape="rect" title="shared Session" /><area alt="Concurrency Control" coords="308, 132, 436, 211" href="./concurrency" shape="rect" title="Concurrency Control" /><area alt="Invitation" coords="443, 132, 539, 211" href="./invitation" shape="rect" title="Invitation" /><area alt="Network Layer" coords="308, 220, 539, 283" href="./networklayer" shape="rect" title="Network Layer" /><area alt="UI" coords="236, 132, 299, 283" href="./ui" shape="rect" title="UI" /><area alt="Eclipse Bridge" coords="163, 132, 227, 283" href="./eclipsebridge" shape="rect" title="Eclipse Bridge" /></map></p>
+<!-- <area shape="rect" coords="92, 60, 155, 283" href="" alt="Ultility" title="Ultility"> --><p><area alt="Feedback" coords="20, 60, 83, 283" href="./feedback" shape="rect" title="Feedback" /><img alt="" src="http://saros-build.imp.fu-berlin.de/img/architecture/saros_high-level.svg" usemap="#links" /><br /></p><div class="toc-filter-back-to-top"><a href="specoverview.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="internal-dependency-management" id="internal-dependency-management" class="toc-bookmark" rel="bookmark" title="Internal Dependency Management"></a>Internal Dependency Management</h2>
 <div>We use the <a href="http://www.picocontainer.org/" target="_top">PicoContainer</a> library to manage our component instances using the Dependency Injection (DI) design pattern.</div>
 <h3>During Runtime</h3>
 <div>We are using two different DI containers (or "contexts"): The Plugin Context is started when the Saros IDE plugin starts, and exists as long as the Saros instance is running. A second container is created whenever a Saros session is started, and it is teared down when the session ends. Components from the Session Context can access components from the Plugin Context, but not the other way around.</div>

@@ -9,29 +9,29 @@
 <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
   <title>Develop on Saros with IntelliJ IDEA | Saros</title>
   <style type="text/css" media="all">
-@import url("../modules/system/system.base.css%3Fp9abym.css");
-@import url("../modules/system/system.menus.css%3Fp9abym.css");
-@import url("../modules/system/system.messages.css%3Fp9abym.css");
-@import url("../modules/system/system.theme.css%3Fp9abym.css");
+@import url("../modules/system/system.base.css");
+@import url("../modules/system/system.menus.css");
+@import url("../modules/system/system.messages.css");
+@import url("../modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
-@import url("../modules/book/book.css%3Fp9abym.css");
-@import url("../modules/comment/comment.css%3Fp9abym.css");
-@import url("../modules/field/theme/field.css%3Fp9abym.css");
-@import url("../modules/node/node.css%3Fp9abym.css");
-@import url("../modules/search/search.css%3Fp9abym.css");
-@import url("../sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
-@import url("../modules/user/user.css%3Fp9abym.css");
-@import url("../modules/forum/forum.css%3Fp9abym.css");
+@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css");
+@import url("../modules/book/book.css");
+@import url("../modules/comment/comment.css");
+@import url("../modules/field/theme/field.css");
+@import url("../modules/node/node.css");
+@import url("../modules/search/search.css");
+@import url("../sites/all/modules/toc_filter/toc_filter.css");
+@import url("../modules/user/user.css");
+@import url("../modules/forum/forum.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
-@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+@import url("../sites/all/modules/ctools/css/ctools.css");
+@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
-@import url("../sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+@import url("../sites/saros-project.org/themes/touch/style.css");
+@import url("../sites/saros-project.org/themes/saros/saros_style.css");
 </style>
   <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4.html"></script>
 <script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2.html"></script>
@@ -54,7 +54,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <div id="logo"><!--start logo-->
       <a id="site_name_link" href="../index.html" title="Home">
-      <img src="../sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+      <img src="../sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
     </a>
     
   <div id="name_slogan">
@@ -224,21 +224,21 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <li><a href="dev-environment.html#provide-swt">Provide the SWT binary and sources</a></li>
 <li><a href="dev-environment.html#create-run-configuration">Create a Run Configuration for starting IntelliJ IDEA with the Saros plugin</a></li>
 </ul><h3><a name="open-project" id="open-project"></a>Step-by-Step: Starting IntelliJ IDEA and Opening the Project</h3>
-<ol><li>If this is your first start of IntelliJ IDEA, you can safely select that you don't want to import anything.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install01.png.html" style="width: 477px; height: 200px;" /></li>
-<li>Assuming that you already retrieved the sources, you can now open the IntelliJ Saros plugin project:<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install02.png.html" style="width: 536px; height: 438px;" /></li>
-<li>Navigate to your local Git clone and select the project <code>de.fu_berlin.inf.dpp.intellij</code>. Then click "OK".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install03.png.html" style="width: 456px; height: 376px;" /></li>
+<ol><li>If this is your first start of IntelliJ IDEA, you can safely select that you don't want to import anything.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install01.png" style="width: 477px; height: 200px;" /></li>
+<li>Assuming that you already retrieved the sources, you can now open the IntelliJ Saros plugin project:<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install02.png" style="width: 536px; height: 438px;" /></li>
+<li>Navigate to your local Git clone and select the project <code>de.fu_berlin.inf.dpp.intellij</code>. Then click "OK".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install03.png" style="width: 456px; height: 376px;" /></li>
 <li>IntelliJ IDEA will load the plugin module along with several auxiliary modules (the core module,  the SWT plugin, and the two-part ui module) and display them in the project view on the left (or Alt+1).</li>
 <li>That's all. But in order to compile your source code, you need to set up and modify a Platform Plugin SDK (next section).</li>
 </ol><h3><a name="create-sdk" id="create-sdk"></a>Step-by-Step: Create the proper Platform Plugin SDK</h3>
 <p><strong>Why do you have to do this?</strong><br />For building an IntelliJ IDEA plugin, you need certain libraries. Creating a new SDK only means: Create a new <em>symbolic name</em>, that points to an existing SDK. In this case, we're going to use the libraries that IntelliJ IDEA provides for building plugins: the "IntelliJ Platform Plugin SDK". The process is as follows:</p>
-<ol><li>Go to "File" &gt; "Project Structure"<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install04.png.html" style="max-width: 100%;" /></li>
-<li>You'll see that IntelliJ IDEA could not find the Project SDK named "IDEA SDK". Therefore we will create one. Click on "New..." and select "IntelliJ Platform Plugin SDK".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install05.png.html" style="max-width: 100%;" /></li>
-<li>In case IntelliJ IDEA prompts "Cannot Create SDK", just click "OK" and select a Java 8 JDK from your computer. Otherwise, just go to the next step.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install06.png.html" style="max-width: 100%;" /></li>
-<li>Select the home directory of the new SDK (there is nothing wrong with the default selection). Then select the JDK you want to use internally (again, the default selection should be fine). The current IntelliJ version (2018.1), and therefore Saros/I, needs Java 1.8 to run.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install07.png.html" style="max-width: 100%;" /></li>
-<li>Now you have an SDK that provides the necessary libraries, but we still have to modify the name and some library settings. To modify your SDK click on "Edit".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install08.png.html" style="max-width: 100%;" /></li>
-<li>Since IDEA SDKs are referenced by their name (through the file <code>.idea/misc.xml</code>) and the default name is generated using the build number of your local IntelliJ IDEA installation, using the default name would result in edit wars when other developers use different IDEA versions. Therefore, we use a common name for the IntelliJ Platform Plugin SDK regardles of the IntelliJ version.<br />Type "<strong>IDEA SDK</strong>" into the field "Name" and then apply your changes.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install09.png.html" style="max-width: 100%;" /></li>
+<ol><li>Go to "File" &gt; "Project Structure"<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install04.png" style="max-width: 100%;" /></li>
+<li>You'll see that IntelliJ IDEA could not find the Project SDK named "IDEA SDK". Therefore we will create one. Click on "New..." and select "IntelliJ Platform Plugin SDK".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install05.png" style="max-width: 100%;" /></li>
+<li>In case IntelliJ IDEA prompts "Cannot Create SDK", just click "OK" and select a Java 8 JDK from your computer. Otherwise, just go to the next step.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install06.png" style="max-width: 100%;" /></li>
+<li>Select the home directory of the new SDK (there is nothing wrong with the default selection). Then select the JDK you want to use internally (again, the default selection should be fine). The current IntelliJ version (2018.1), and therefore Saros/I, needs Java 1.8 to run.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install07.png" style="max-width: 100%;" /></li>
+<li>Now you have an SDK that provides the necessary libraries, but we still have to modify the name and some library settings. To modify your SDK click on "Edit".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install08.png" style="max-width: 100%;" /></li>
+<li>Since IDEA SDKs are referenced by their name (through the file <code>.idea/misc.xml</code>) and the default name is generated using the build number of your local IntelliJ IDEA installation, using the default name would result in edit wars when other developers use different IDEA versions. Therefore, we use a common name for the IntelliJ Platform Plugin SDK regardles of the IntelliJ version.<br />Type "<strong>IDEA SDK</strong>" into the field "Name" and then apply your changes.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install09.png" style="max-width: 100%;" /></li>
 <li>
-<p>Optionally you may wish to add the IDEA sources to the SDK. This allows you to access the source code and code comments of IntelliJ classes, which can be very helpful. You can get the sources via <a href="http://www.jetbrains.org/pages/viewpage.action?pageId=983225">http://www.jetbrains.org/pages/viewpage.action?pageId=983225</a>. <span style="font-size: 13.008px;">This will get you the most current version of the sources.</span><br /><br /><span style="font-size: 13.008px;">To get the source for the current release you are using, you can look up the used build by going to "Help" &gt; "About". </span>This will show the used IntelliJ version and the matching build below it. You can then checkout the matching tag "tags/idea/[BUILD-NUMBER]". For IntelliJ 2018.1 this would be "tags/idea/181.4455.78".<br /><br /><span style="font-size: 13.008px;">Then add the IDEA source folder to the IDEA SDK, by pressing the big green "+" in the tab "Sourcepath"</span><img alt="Adding IDEA SDK source folders" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install11.png.html" style="font-size: 13.008px; max-width: 100%;" /></p>
+<p>Optionally you may wish to add the IDEA sources to the SDK. This allows you to access the source code and code comments of IntelliJ classes, which can be very helpful. You can get the sources via <a href="http://www.jetbrains.org/pages/viewpage.action?pageId=983225">http://www.jetbrains.org/pages/viewpage.action?pageId=983225</a>. <span style="font-size: 13.008px;">This will get you the most current version of the sources.</span><br /><br /><span style="font-size: 13.008px;">To get the source for the current release you are using, you can look up the used build by going to "Help" &gt; "About". </span>This will show the used IntelliJ version and the matching build below it. You can then checkout the matching tag "tags/idea/[BUILD-NUMBER]". For IntelliJ 2018.1 this would be "tags/idea/181.4455.78".<br /><br /><span style="font-size: 13.008px;">Then add the IDEA source folder to the IDEA SDK, by pressing the big green "+" in the tab "Sourcepath"</span><img alt="Adding IDEA SDK source folders" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install11.png" style="font-size: 13.008px; max-width: 100%;" /></p>
 </li>
 <li>
 <p>Apply your changes and close the dialog.</p>
@@ -259,16 +259,16 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </li>
 </ol><h4>Deploy the SWT-Plugin that comes with Saros to your IntelliJ plugin directory</h4>
 <ol><li>
-<p>In order to get Saros/I running you need to install the "swt library plugin". You can find it in the folder <code>de.fu_berlin.inf.dpp.swt_plugin. </code><br /><br />To install the plugin please copy the whole folder <code>de.fu_berlin.inf.dpp.swt_plugin</code> into your IntelliJ plugin directory. For more information about where this directory is, see <a href="https://www.jetbrains.com/idea/help/project-and-ide-settings.html">https://www.jetbrains.com/idea/help/project-and-ide-settings.html</a>.<br />Tip: Look in the following dialog to find the "plugins" directory which resides just next to Sandbox Home:<br /><br /><img alt="" height="325" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install09.png.html" width="648" /></p>
+<p>In order to get Saros/I running you need to install the "swt library plugin". You can find it in the folder <code>de.fu_berlin.inf.dpp.swt_plugin. </code><br /><br />To install the plugin please copy the whole folder <code>de.fu_berlin.inf.dpp.swt_plugin</code> into your IntelliJ plugin directory. For more information about where this directory is, see <a href="https://www.jetbrains.com/idea/help/project-and-ide-settings.html">https://www.jetbrains.com/idea/help/project-and-ide-settings.html</a>.<br />Tip: Look in the following dialog to find the "plugins" directory which resides just next to Sandbox Home:<br /><br /><img alt="" height="325" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install09.png" width="648" /></p>
 </li>
 <li>
 <p>Now you are in the position to compile your own IntelliJ Saros plugin. To make this as easy as possible, we're going to create a Run Configuration in the next section.</p>
 </li>
 </ol><h3><a name="create-run-configuration" id="create-run-configuration"></a>Step-by-Step: Create a Run Configuration</h3>
-<ol><li>Find the little downward arrow in the top right corner, click on it, and select "Edit Configurations..."<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run01.png.html" style="width: 270px; height: 161px;" /></li>
-<li>In the newly opened wizard, click on the plus sign (top left) and select "Plugin" (because we want our new Run Configuration to launch Saros, which is a plugin).<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run02.png.html" style="width: 202px; height: 340px;" /></li>
-<li>IntelliJ IDEA will find the Saros intellij plugin and fill in the fields "Use classpath of module" and the "VM Options" for you. It will also add a "Make" before launching so your source code will automatically be built. The only thing left for you to do is choose a name for this Run Configuration, e.g. "Saros-I". Then you can apply your changes and close the wizard.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run03.png.html" style="max-width: 100%;" /></li>
-<li>Now you will find your new Run Configuration in the top right corner. You can launch it by clicking on the play button. IntelliJ IDEA will then compile your source code, create an IntelliJ IDEA plugin, and start a new instance of IntelliJ with this plugin installed, so you can play around with it and test its features.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run04.png.html" style="width: 282px; height: 134px;" /></li>
+<ol><li>Find the little downward arrow in the top right corner, click on it, and select "Edit Configurations..."<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run01.png" style="width: 270px; height: 161px;" /></li>
+<li>In the newly opened wizard, click on the plus sign (top left) and select "Plugin" (because we want our new Run Configuration to launch Saros, which is a plugin).<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run02.png" style="width: 202px; height: 340px;" /></li>
+<li>IntelliJ IDEA will find the Saros intellij plugin and fill in the fields "Use classpath of module" and the "VM Options" for you. It will also add a "Make" before launching so your source code will automatically be built. The only thing left for you to do is choose a name for this Run Configuration, e.g. "Saros-I". Then you can apply your changes and close the wizard.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run03.png" style="max-width: 100%;" /></li>
+<li>Now you will find your new Run Configuration in the top right corner. You can launch it by clicking on the play button. IntelliJ IDEA will then compile your source code, create an IntelliJ IDEA plugin, and start a new instance of IntelliJ with this plugin installed, so you can play around with it and test its features.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/run04.png" style="width: 282px; height: 134px;" /></li>
 </ol><div class="toc-filter-back-to-top"><a href="dev-environment.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="deploy-and-install-the-saros-i-plugin" id="deploy-and-install-the-saros-i-plugin" class="toc-bookmark" rel="bookmark" title="Deploy and install the Saros-I plugin"></a>Deploy and install the Saros-I plugin</h2>
 <p>Saros/I can be packaged as a .zip file which can be installed in another IntelliJ instance via "Settings" &gt; "Plugins" &gt; "Install plugin from disk...". There are two ways of creating the packaged version:<br /><br />From within IntelliJ IDEA:</p>
 <ul><li>Go to the folder  "de.fu_berlin.inf.dpp.ui.frontend/bin/" and remove the "META-INF" folder. (This folder will be recreated every time you choose the option "Build"&gt;"Rebuild project" and needs to be removed every time before the plugin zip can be build.)</li>
@@ -288,11 +288,11 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </ul><div class="toc-filter-back-to-top"><a href="dev-environment.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="working-on-saros-for-intellij-with-eclipse-refactorings-" id="working-on-saros-for-intellij-with-eclipse-refactorings-" class="toc-bookmark" rel="bookmark" title="Working on Saros for IntelliJ with Eclipse (Refactorings)"></a>Working on Saros for IntelliJ with Eclipse (Refactorings)</h2>
 <p>When refactoring Saros core code it is often useful to be able to refactor code in the IntelliJ and the Eclipse packages at the same time. The easiest way to so is to import the IntelliJ project in Eclipse and configure the appropriate libraries.<br />(If you find a way to build Saros for Eclipse in IntelliJ, please write us!)</p>
 <p>The guide will assume, that you have Saros for <strong>Eclipse</strong> and for <strong>IntelliJ</strong> set up and running.</p>
-<ol><li>In the "Git repositories" view, unfold "Working directory", right-click on "de.fu_berlin.inf.dpp.intellij" and select "Import projects...".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install12.png.html" style="max-width: 100%;" /><br /><br /> </li>
-<li>From the bullet list, choose "Import existing Projects" and click "Finish" on the next page without changing anything.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install13.png.html" style="max-width: 100%;" /></li>
-<li>We need to add the IntelliJ libraries to the build path in order to compile the project. To do so open "Configure Build Path...", go to the "Libraries" tab, click on "Add Variable...".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install14.png.html" style="max-width: 100%;" /><br /> </li>
-<li>In the "New Variable Classpath Entry" dialog, select "Configure Variables..."<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install15.png.html" style="max-width: 100%;" /><br /> </li>
-<li>In the opening Preferences pages, click on "New..." and create a new Classpath Variable called <strong>"INTELLIJ_LIB"</strong> (exact name) and add as <strong>Folder</strong> the "/lib" folder of your local IntelliJ installation (found in the IDEA folder).<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install16.png.html" style="max-width: 100%;" /></li>
+<ol><li>In the "Git repositories" view, unfold "Working directory", right-click on "de.fu_berlin.inf.dpp.intellij" and select "Import projects...".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install12.png" style="max-width: 100%;" /><br /><br /> </li>
+<li>From the bullet list, choose "Import existing Projects" and click "Finish" on the next page without changing anything.<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install13.png" style="max-width: 100%;" /></li>
+<li>We need to add the IntelliJ libraries to the build path in order to compile the project. To do so open "Configure Build Path...", go to the "Libraries" tab, click on "Add Variable...".<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install14.png" style="max-width: 100%;" /><br /> </li>
+<li>In the "New Variable Classpath Entry" dialog, select "Configure Variables..."<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install15.png" style="max-width: 100%;" /><br /> </li>
+<li>In the opening Preferences pages, click on "New..." and create a new Classpath Variable called <strong>"INTELLIJ_LIB"</strong> (exact name) and add as <strong>Folder</strong> the "/lib" folder of your local IntelliJ installation (found in the IDEA folder).<br /><img alt="" src="../sites/saros-project.org/files/DevDocumentation/saros-i/install16.png" style="max-width: 100%;" /></li>
 </ol><p>Now your Eclipse is able to compile Saros for IntelliJ!</p>
 <div class="toc-filter-back-to-top"><a href="dev-environment.html#top">Back to top</a></div><h2 class="toc-header toc-header-bullet"><a name="known-issues" id="known-issues" class="toc-bookmark" rel="bookmark" title="Known issues"></a>Known issues</h2>
 <h3>Ubuntu 14.04 LTS (64bit) and Linux Mint 17.1 (64bit)</h3>

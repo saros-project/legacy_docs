@@ -12,29 +12,29 @@
 <link rel="prev" href="125.html" />
   <title>Commit and push your change | Saros</title>
   <style type="text/css" media="all">
-@import url("../modules/system/system.base.css%3Fp9abym.css");
-@import url("../modules/system/system.menus.css%3Fp9abym.css");
-@import url("../modules/system/system.messages.css%3Fp9abym.css");
-@import url("../modules/system/system.theme.css%3Fp9abym.css");
+@import url("../modules/system/system.base.css");
+@import url("../modules/system/system.menus.css");
+@import url("../modules/system/system.messages.css");
+@import url("../modules/system/system.theme.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
-@import url("../modules/book/book.css%3Fp9abym.css");
-@import url("../modules/comment/comment.css%3Fp9abym.css");
-@import url("../modules/field/theme/field.css%3Fp9abym.css");
-@import url("../modules/node/node.css%3Fp9abym.css");
-@import url("../modules/search/search.css%3Fp9abym.css");
-@import url("../sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
-@import url("../modules/user/user.css%3Fp9abym.css");
-@import url("../modules/forum/forum.css%3Fp9abym.css");
+@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css");
+@import url("../modules/book/book.css");
+@import url("../modules/comment/comment.css");
+@import url("../modules/field/theme/field.css");
+@import url("../modules/node/node.css");
+@import url("../modules/search/search.css");
+@import url("../sites/all/modules/toc_filter/toc_filter.css");
+@import url("../modules/user/user.css");
+@import url("../modules/forum/forum.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
-@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+@import url("../sites/all/modules/ctools/css/ctools.css");
+@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css");
 </style>
 <style type="text/css" media="all">
-@import url("../sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
-@import url("../sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+@import url("../sites/saros-project.org/themes/touch/style.css");
+@import url("../sites/saros-project.org/themes/saros/saros_style.css");
 </style>
   <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4.html"></script>
 <script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2.html"></script>
@@ -57,7 +57,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <div id="logo"><!--start logo-->
       <a id="site_name_link" href="../index.html" title="Home">
-      <img src="../sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+      <img src="../sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
     </a>
     
   <div id="name_slogan">
@@ -205,29 +205,29 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <ol class="procedure" type="1"><li class="step" title="Add change to the index">
 <p class="title"><b>Add change to the index</b></p>
 <p><strong>Right click on the file(s) you changed</strong> and select <strong> <span class="guimenu">Team</span> </strong> → <span class="guimenuitem"> <strong>Add to Index</strong> to add the files to the index.</span><br />This moves the change into the index and marks the new version as to be committed.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/1.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/1.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Commit">
 <p class="title"><b>Commit</b></p>
 <p><strong>Right click on the file(s) you indexed</strong> and click <strong> <span class="guimenu">Team</span> </strong> → <span class="guimenuitem"> <strong>Commit</strong>... to commit the files.</span></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/2.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/2.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Writing a commit message">
 <p class="title"><b>Writing a commit message</b></p>
 <p>Make sure that the <span class="bold"> <strong>Gerrit option is enabled</strong> </span> (marked red in top left corner) and that a line with <span class="emphasis"> <em>Change-Id</em> </span> is in the editor field. You must not edit this line, just make sure it's there. Follow our <a class="ulink" href="../coderules.1.html#before_committing" target="_top">Guidelines for writing the commit message</a>.</p>
 <p class="yellowbox">The format of the <span class="strong"> <strong>author</strong> </span> and <span class="strong"> <strong>committer</strong> </span> must be "John Doe &lt;<a href="mailto:john.doe@anywhere.com">john.doe@anywhere.com</a>&gt;"!<br /><span class="strong"> <strong>Not</strong> </span> "<span class="strong"> <strong>johnd</strong> </span> &lt;john.doe@...&gt;" or "<span class="strong"> <strong>johnny</strong> </span> &lt;john.doe@...&gt;" or "<strong>John </strong>&lt;john.doe@...&gt;"</p>
 <p>Confirm your commit by pressing <span class="guibutton">Commit to</span> create a <span class="emphasis"> <em>local commit</em> </span>.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/3.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/3.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Push">
 <p class="title"><b>Push</b></p>
 <p><strong>Right click on <em>Saros</em> </strong> and select <strong> <span class="guimenuitem">Team</span> </strong> → <strong> <span class="guimenuitem">Remote</span> </strong> → <strong> <span class="guimenuitem">Push...</span> </strong></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/4.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/4.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Select Target">
 <p class="title"><b>Select Target</b></p>
 <p>Select the <strong>Configured remote repository</strong> as the target for your changes and continue by pressing the <span class="guibutton">Next</span> button.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/5.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/5.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Add push specification">
 <p class="title"><b>Add push specification</b></p>
@@ -238,27 +238,27 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </ul></div>
 <p>and click <span class="guibutton">Add Spec</span>.</p>
 <p class="yellowbox">Make sure you don't select <strong>refs/heads/master </strong>from the list. There is a subtle difference between these two: You are not pushing commits <em>directly to</em> a branch, but <em>for review for</em> a branch (see <a href="http://saros-build.imp.fu-berlin.de/gerrit/Documentation/user-upload.html#push_create" target="_blank">Gerrit's documentation</a> for more information on that).<br />Note that the screenshots below still show the deprecated "refs/for/sandbox". Please read it as "refs/for/master".</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/6.png.html" style="width: 614px; height: 207px;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/6.png" style="width: 614px; height: 207px;" /></div>
 </li>
 <li class="step" title="Select Branch">
 <p class="title"><b>Select Branch</b></p>
 <p>Now your <span class="emphasis"> <em>local HEAD</em> </span> will be pushed to the <span class="emphasis"> <em>remote branch</em> </span> <span class="bold"> <strong>refs/for/master</strong></span>. Press <span class="guibutton">Next</span> to continue.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/7.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/7.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Push Confirmation">
 <p class="title"><b>Push Confirmation</b></p>
 <p>Review what and where things are pushed and <span class="guibutton">Finish </span></p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/8.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/8.png" style="max-width: 100%;" /></div>
 </li>
 <li class="step" title="Push Result">
 <p class="title"><b>Push Result</b></p>
 <p>The result should include a set of change numbers of the Gerrit system.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/9.png.html" style="width: 658px; height: 440px;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/9.png" style="width: 658px; height: 440px;" /></div>
 </li>
 <li class="step" title="See your change in Gerrit">
 <p class="title"><b>See your change in Gerrit</b></p>
 <p><span class="bold"><strong>Log in to <a class="ulink" href="http://saros-build.imp.fu-berlin.de/gerrit/#/q/status:open,n,z" target="_top">Gerrit</a> </strong> </span> and there you can see your change.</p>
-<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/10.png.html" style="max-width: 100%;" /></div>
+<div class="mediaobject"><img src="../sites/saros-project.org/files/DevDocumentation/first-steps/first-change/commit-push-change/10.png" style="max-width: 100%;" /></div>
 </li>
 </ol></div>
 </div></div></div>  <div id="book-navigation-112" class="book-navigation">
