@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="../sites/saros-project.org/themes/saros/favicon.ico.html" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="70.html" />
+<link rel="canonical" href="../coderules.1.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Coding Conventions | Saros</title>
+  <style type="text/css" media="all">
+@import url("../modules/system/system.base.css%3Fp9abym.css");
+@import url("../modules/system/system.menus.css%3Fp9abym.css");
+@import url("../modules/system/system.messages.css%3Fp9abym.css");
+@import url("../modules/system/system.theme.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
+@import url("../modules/book/book.css%3Fp9abym.css");
+@import url("../modules/comment/comment.css%3Fp9abym.css");
+@import url("../modules/field/theme/field.css%3Fp9abym.css");
+@import url("../modules/node/node.css%3Fp9abym.css");
+@import url("../modules/search/search.css%3Fp9abym.css");
+@import url("../sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
+@import url("../modules/user/user.css%3Fp9abym.css");
+@import url("../modules/forum/forum.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
+@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
+@import url("../sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+</style>
+  <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4.html"></script>
+<script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2.html"></script>
+<script type="text/javascript" src="../misc/drupal.js%3Fp9abym.html"></script>
+<script type="text/javascript" src="../sites/all/modules/toc_filter/toc_filter.js%3Fp9abym.html"></script>
+<script type="text/javascript" src="../sites/saros-project.org/themes/touch/js/scrolltopcontrol.js%3Fp9abym.html"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saros","theme_token":"e89ELoF6XNbJ3AcRPzb2y2SCbCu_5_bynEhQHslGvvU","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/toc_filter\/toc_filter.js":1,"sites\/saros-project.org\/themes\/touch\/js\/scrolltopcontrol.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/ldap\/ldap_user\/ldap_user.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/toc_filter\/toc_filter.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/saros-project.org\/themes\/touch\/style.css":1,"sites\/saros-project.org\/themes\/saros\/saros_style.css":1}},"toc_filter_smooth_scroll_duration":"","urlIsAjaxTrusted":{"\/node\/70":true}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-70 node-type-page" >
+    <div id="wrapper" class="clearfix">
+<div id="header-top" class="clearfix">
+
+<div id="logo"><!--start logo-->
+      <a id="site_name_link" href="../index.html" title="Home">
+      <img src="../sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+    </a>
+    
+  <div id="name_slogan">
+          <a id="site-name" href="../index.html" title="Home" rel="home"><span>Saros</span></a>
+      
+          <br/>
+      <a id="site-slogan" id="site-name" href="../index.html" title="Home" rel="home"><span>Distributed Party Programming</span></a>
+      
+  </div><!--end name_slogan-->
+  
+
+<!--div id="site-slogan">Distributed Party Programming</div><!--site slogan-->
+</div><!--end logo-->
+
+
+
+
+ <!-- / start search box region -->
+    <div class="search-box">
+      <div class="region region-search-box">
+  <div id="block-search-form" class="block block-search">
+
+      
+  <div class="content">
+    <form action="70.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-_gBA6imuzeVr1_Evyxc_UvTLc360a9-LUepMwIDB2Mc" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </div> <!-- / end search box region -->
+  </div><!--end header-top-->
+<div id="header" class="clearfix"><!--start header--> 
+    <div id="main-menu">
+    <ul class="menu"><li class="first leaf"><a href="../home.html" title="Frontpage">Home</a></li>
+<li class="expanded"><a href="66.html">About Saros</a><ul class="menu"><li class="first leaf"><a href="../features.html" title="List of Saros features">Features</a></li>
+<li class="leaf"><a href="../screenshots.html" title="Get impressions with screenshots">Screenshots</a></li>
+<li class="leaf"><a href="../host-comic.html">Saros Host Comic</a></li>
+<li class="leaf"><a href="../what-others-say.html" title="Information about where Saros has been mentioned">What others say</a></li>
+<li class="last leaf"><a href="../history.html" title="Development history and people involved">History</a></li>
+</ul></li>
+<li class="expanded"><a href="../setup.html" title="Learn how to use Saros">Installation &amp; Set-Up</a><ul class="menu"><li class="first expanded"><a href="../installation.html" title="Installing Saros in Eclipse">Install Saros</a><ul class="menu"><li class="first last leaf"><a href="../setupXMPP.html" title="Setup your own XMPP Server (Advanced Users)">Setup own XMPP Server</a></li>
+</ul></li>
+<li class="last leaf"><a href="../GettingStarted.html">Getting Started with Saros</a></li>
+</ul></li>
+<li class="expanded"><a href="../support_home.html">Support</a><ul class="menu"><li class="first leaf"><a href="../mailing-list-chat.html" title="Information on how to reach the Saros team via mailing lists">Mailing Lists</a></li>
+<li class="leaf"><a href="../troubleshooting.html" title="Known problems when using Saros">Troubleshooting</a></li>
+<li class="leaf"><a href="../faq.html" title="Frequently asked questions">Saros FAQ</a></li>
+<li class="leaf"><a href="../compatibility.html">Plugin Compatibility</a></li>
+<li class="last leaf"><a href="../feedback.html" title="Information about the feature feedback">User Survey &amp; Statistics</a></li>
+</ul></li>
+<li class="expanded active-trail"><a href="../getinvolved.html" title="Learn how to develop on Saros" class="active-trail">Develop on Saros</a><ul class="menu"><li class="first expanded"><a href="../checkout-and-first-steps.html">Check-Out and First Steps</a><ul class="menu"><li class="first expanded"><a href="../setup-dev-environment.html">Set up development environment</a><ul class="menu"><li class="first leaf"><a href="../dev-environment-reqs.html">Environment Requirements</a></li>
+<li class="leaf"><a href="../install-subclipse.html">Install Subclipse for building Saros/E</a></li>
+<li class="leaf"><a href="../install-egit.html">Install EGit</a></li>
+<li class="leaf"><a href="../our-dev-workflow.html">Our workflow</a></li>
+<li class="leaf"><a href="../gerrit-login.html">Log in to Gerrit</a></li>
+<li class="leaf"><a href="../eclipse-setup-git.html">Setting your name and email address for using Gerrit</a></li>
+<li class="leaf"><a href="../eclipse-setup-ssh.html">Create and configure an SSH key for using Gerrit</a></li>
+<li class="leaf"><a href="../get-source-code.html">Get Saros source code</a></li>
+<li class="leaf"><a href="../import-code-style-profiles.html">Import code style profiles</a></li>
+<li class="last leaf"><a href="../run-saros-as-dev.html">Run your Saros</a></li>
+</ul></li>
+<li class="last expanded"><a href="../make-first-change.html">Making changes to Saros</a><ul class="menu"><li class="first leaf"><a href="124.html">Create a new local branch</a></li>
+<li class="leaf"><a href="125.html">Doing your first change</a></li>
+<li class="leaf"><a href="../commit-and-push-first-change.html">Commit and push your change</a></li>
+<li class="last leaf"><a href="127.html">Abandon your change in Gerrit</a></li>
+</ul></li>
+</ul></li>
+<li class="collapsed"><a href="../ongoing-work.html">Ongoing Work</a></li>
+<li class="expanded active-trail"><a href="../guidelines.html" class="active-trail">Guidelines</a><ul class="menu"><li class="first leaf"><a href="../contribution.html">Contribution Rules</a></li>
+<li class="expanded active-trail"><a href="../coderules.1.html" title="Coding Guidelines and Rules" class="active-trail active">Coding Conventions</a><ul class="menu"><li class="first leaf"><a href="../coderules/before-committing.html">Before Committing</a></li>
+<li class="leaf"><a href="../coderules/structure.html">Code structure</a></li>
+<li class="last leaf"><a href="../coderules/java-classes.html">Java classes</a></li>
+</ul></li>
+<li class="leaf"><a href="../usability.html" title="Guidelines to ensure Usability">Usability Guidelines</a></li>
+<li class="leaf"><a href="../TicketGuidelines.html">Ticket Guidelines</a></li>
+<li class="last leaf"><a href="../ci-rules.html">Jenkins Rules</a></li>
+</ul></li>
+<li class="collapsed"><a href="../tools.html">Tools</a></li>
+<li class="expanded"><a href="../processes.html" title="Processes in Saros">Processes</a><ul class="menu"><li class="first leaf"><a href="../review.html" title="Information about the review process">Review</a></li>
+<li class="leaf"><a href="../ReleaseProcess.html" title="Our Release Process">Release</a></li>
+<li class="expanded"><a href="../testing.html" title="Information about the testing process">Testing</a><ul class="menu"><li class="first last leaf"><a href="../jenkins.html">Jenkins and Saros</a></li>
+</ul></li>
+<li class="leaf"><a href="../bugtracker.html" title="Watch the bug tracker">Bug Tracking</a></li>
+<li class="last leaf"><a href="../documentation.html" title="Information about the documentation process">Documentation</a></li>
+</ul></li>
+<li class="leaf"><a href="../mailingslists.html">Mailinglists</a></li>
+<li class="leaf"><a href="https://sourceforge.net/p/dpp/bugs/" title="">Bug Tracker</a></li>
+<li class="leaf"><a href="https://sourceforge.net/projects/dpp/" title="Visit Saros at Sourceforge">Saros@Sourceforge</a></li>
+<li class="collapsed"><a href="../gsoc.1.html">Google Summer of Code</a></li>
+<li class="last expanded"><a href="129.html">FAQ in daily practice</a><ul class="menu"><li class="first leaf"><a href="132.html" title="A change was integrated to master. How can I update my local code?">Update local code to master</a></li>
+<li class="leaf"><a href="130.html" title="I messed up my local copy of Saros. How can I reset/clean up/revert my changes?">Revert local changes</a></li>
+<li class="leaf"><a href="../upload-new-patch-set.html" title="Someone discovered an error/failure/typo. How can I upload a new patch set?">Upload a new patch set</a></li>
+<li class="leaf"><a href="133.html" title="My build failed. What&#039;s wrong with my change?">Building in Gerrit failed!</a></li>
+<li class="leaf"><a href="../gerrit-checkout-patch.html" title="Someone uploaded a change to Gerrit. How can I test this change?">Get &amp; run someones change</a></li>
+<li class="leaf"><a href="145.html" title="What is a Change? Patch set? Submit?">Change? Patch set? Submit?</a></li>
+<li class="leaf"><a href="../gerrit-groups-and-permissions.html" title="Which permissions do I have?">Check Gerrit permissions</a></li>
+<li class="leaf"><a href="142.html" title="How to delete an unwanted local branch in EGit?">Delete local branch</a></li>
+<li class="leaf"><a href="136.html">Duplicate Location Error</a></li>
+<li class="leaf"><a href="../gerrit-review.html" title="Someone wants that I review a change. How to review a change?">Review a change</a></li>
+<li class="leaf"><a href="140.html" title="How to run Saros STF tests locally?">Run STF tests locally</a></li>
+<li class="leaf"><a href="139.html" title="I ran an STF test (located in test/stf) and get an error! What&#039;s wrong?">STF tests fail</a></li>
+<li class="leaf"><a href="138.html" title="How to set up Saros for running local STF tests?">Set up STF tests</a></li>
+<li class="leaf"><a href="144.html" title="I want automate my testing process. How to write my own STF tests?">Write STF tests</a></li>
+<li class="last leaf"><a href="../git-recipes.html">Git use-cases</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="../techdoc.html" title="Technical Documentation">Technical Documentation</a><ul class="menu"><li class="first leaf"><a href="../architectureDocumentation.html">Architecture Documentation</a></li>
+<li class="leaf"><a href="../specoverview.html">Overview</a></li>
+<li class="leaf"><a href="../concurrency.html" title="Information about Concurrency">Concurrency</a></li>
+<li class="leaf"><a href="../eclipsebridge.html">Eclipse Bridge</a></li>
+<li class="leaf"><a href="../packageFeedback.html" title="Information about the feedback feature">Feedback</a></li>
+<li class="leaf"><a href="../invitation.html" title="Information about invitation">Invitation</a></li>
+<li class="leaf"><a href="../networklayer.html" title="Information about the network layer">Network Layer</a></li>
+<li class="expanded"><a href="../sharedsession.html" title="Information about shared session">Shared Session</a><ul class="menu"><li class="first last leaf"><a href="../activities.html" title="Information about activities">Activities</a></li>
+</ul></li>
+<li class="last leaf"><a href="../ui.html" title="Information about user interface">User Interface</a></li>
+</ul></li>
+<li class="expanded"><a href="../research.html" title="Research">Research</a><ul class="menu"><li class="first leaf"><a href="../bibliography.html" title="Saros related literature">Bibliography</a></li>
+<li class="last leaf"><a href="../relatedwork.html">Related Work</a></li>
+</ul></li>
+<li class="last leaf"><a href="../contact.html">Contact</a></li>
+</ul></div><!-- end main-menu -->
+</div> <!-- /#header -->
+<div id="content-body">
+<div class="breadcrumb"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="../index.html">Home</a> » <a href="../getinvolved.html" title="Learn how to develop on Saros">Develop on Saros</a> » <a href="../guidelines.html">Guidelines</a> » Coding Conventions</nav></div>
+  <section id="main" role="main" class="clear">
+        <a id="main-content"></a>
+            <h1 class="title" id="page-title">Coding Conventions</h1>                    <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                          <span property="dc:title" content="Coding Conventions" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+      
+    
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><a name="top" class="toc-filter-top"></a><div class="toc-filter toc-filter-number"><div class="toc-filter-content"><div class="item-list"><ol class="toc-filter-links"><li class="first"><a href="70.html#-a-name-license-id-license-a-langugage-and-license">Langugage and License</a></li>
+<li><a href="70.html#-a-name-project-structure-id-project-structure-a-project-structure">Project Structure</a></li>
+<li><a href="70.html#-a-name-naming-conventions-id-naming-conventions-a-naming-conventions">Naming Conventions</a></li>
+<li><a href="70.html#-a-name-code-structure-id-code-structure-a-structuring-your-code">Structuring your code</a></li>
+<li><a href="70.html#-a-name-java-classes-id-java-classes-a-writing-java-classes">Writing Java Classes</a></li>
+<li><a href="70.html#-a-name-javadoc-tags-id-javadoc-tags-a-javadoc-tags">JavaDoc Tags</a></li>
+<li><a href="70.html#-a-name-progress-and-cancelation-id-progress-and-cancelation-a-progress-amp-cancelation-101">Progress &amp; Cancelation 101</a></li>
+<li><a href="70.html#-a-name-nesting-progress-id-nesting-progress-a-nesting-progress">Nesting Progress</a></li>
+<li><a href="70.html#-a-name-reporting-information-to-a-user-id-reporting-information-to-a-user-a-reporting-information-to-the-user">Reporting information to the user</a></li>
+<li><a href="70.html#-a-name-dealing-with-unspecified-length-operations-id-dealing-with-unspecified-length-operations-a-dealing-with-operations-of-unspecified-length">Dealing with operations of unspecified length</a></li>
+<li><a href="70.html#-a-name-cancellation-id-cancellation-a-cancellation">Cancellation</a></li>
+<li><a href="70.html#-a-name-software-design-rules-id-software-design-rules-a-software-design-rules">Software Design Rules</a></li>
+<li><a href="70.html#-a-name-common-templates-id-common-templates-a-common-templates">Common Templates</a></li>
+<li><a href="70.html#-a-name-documentation-id-documentation-a-documentation">Documentation</a></li>
+<li><a href="70.html#-a-name-before-committing-id-before-committing-a-before-committing-formatting-and-cleaning-up">Before Committing: Formatting and cleaning-up</a></li>
+<li><a href="70.html#-a-name-error-reporting-exception-handling-logging-id-error-reporting-exception-handling-logging-a-error-reporting-exception-handling-and-logging">Error Reporting, Exception Handling and Logging</a></li>
+<li class="last"><a href="70.html#-a-name-little-things-and-best-practices-id-little-things-and-best-practices-a-little-things-and-best-practices">Little Things and Best Practices</a></li>
+</ol></div></div></div>
+<div class="toc-filter-back-to-top first"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-license-id-license-a-langugage-and-license" id="-a-name-license-id-license-a-langugage-and-license" class="toc-bookmark" rel="bookmark" title="Langugage and License"></a><span class="toc-number">1.  </span> <a name="license" id="license"></a>Langugage and License</h2>
+<p>Saros is licensed under GPLv2.<br />All 3rd party code that has not been written by a Saros team member (i.e. an open-source contributor, a student or a member of the <a href="http://www.mi.fu-berlin.de/w/SE/WebHome">AG Software Engineering at the Freie Universität Berlin</a>) is kept in a separate source folder named <code>ext-src</code>.</p>
+<p>All code (i.e. identifiers) and comments are written in American English.</p>
+<div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-project-structure-id-project-structure-a-project-structure" id="-a-name-project-structure-id-project-structure-a-project-structure" class="toc-bookmark" rel="bookmark" title="Project Structure"></a><span class="toc-number">2.  </span> <a name="project_structure" id="project_structure"></a>Project Structure</h2>
+<p>The project is <a href="http://sourceforge.net/projects/dpp">hosted on Sourceforge</a> and <a href="https://github.com/saros-project/saros">replicated on GitHub</a>. The corresponding Git repositories are read-only. All code changes go through <a href="http://saros-build.imp.fu-berlin.de/gerrit">our review system Gerrit</a>.</p>
+<p>The Saros project's code is split as follows:</p>
+<ul><li>IDE-independent source code and libraries:
+<ul><li><code>de.fu_berlin.inf.<strong>dpp.core</strong> </code></li>
+</ul></li>
+<li>The Eclipse world: Saros/E
+<ul><li><code>de.fu_berlin.inf.<strong>dpp</strong></code><strong> </strong>contains the Eclipse-specific sources and libraries. Saros/E is the combination of this project and the core.</li>
+<li><code>de.fu_berlin.inf.<strong>dpp.whiteboard</strong></code><strong> </strong>contains the Saros whiteboard plugin, which is only available for and depends on Saros/E.</li>
+<li><code>de.fu_berlin.inf.<strong>dpp.feature</strong></code> is necessary for creating the Saros/E plugin</li>
+<li><code>de.fu_berlin.inf.<strong>dpp.update</strong></code> is necessary for creating the update-site for installing or updating Saros/E</li>
+<li><code>de.fu_berlin.inf.<strong>dpp.update_beta</strong></code><strong> </strong>is the update-site used for User Acceptance Test during a <a href="../ReleaseProcess.html">release process</a>.</li>
+</ul></li>
+<li>The IntelliJ world: Saros/I
+<ul><li><code>de.fu_berlin.inf.<strong>dpp.intellij</strong></code><strong> </strong>contains the IntelliJ-specific sources and libraries. Saros/I is the combination of this project and the core.</li>
+<li><code>de.fu_berlin.inf.<strong>dpp.swt_plugin</strong></code> contains Eclipse's SWT libraries to be distributed as a separate plugin along with the <code>intellij</code> project.</li>
+</ul></li>
+</ul><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-naming-conventions-id-naming-conventions-a-naming-conventions" id="-a-name-naming-conventions-id-naming-conventions-a-naming-conventions" class="toc-bookmark" rel="bookmark" title="Naming Conventions"></a><span class="toc-number">3.  </span> <a name="naming_conventions" id="naming_conventions"></a>Naming Conventions</h2>
+<ul><li>This section is mainly based on the <a href="http://www.oracle.com/technetwork/java/codeconventions-135099.html#367" target="_top">Code Conventions for the Java TM Programming Language, Chapter 9</a></li>
+<li>Differences and additional conventions
+<ul><li>Non-Listener interfaces should be preceded by an <code>I</code>
+<ul><li>e.g: <code>IProject</code>, <code>IPreferenceStore</code></li>
+</ul></li>
+<li>Listener interfaces should use the name of their corresponding class and add <code>Listener</code> to it
+<ul><li>e.g. <code>MouseListener</code></li>
+</ul></li>
+</ul></li>
+<li>All test case classes <b>must</b> end with <b>Test</b>. e.g <code>HelloWorldTest</code></li>
+<li>A test suite classes must contain the character sequence <b>TestSuite</b></li>
+<li>Every test class that is used for White-Box testing must be declared in the same package , e.g <code>foo.bar.HelloWorld</code> -&gt; <code>foo.bar.HelloWorldTest</code></li>
+<li>STF test cases <b>must</b> be put in any subpackage of <code>de.fu_berlin.inf.dpp.stf.test</code>, e.g <code>de.fu_berlin.inf.dpp.stf.test.account.AccountPreferencePageTest</code></li>
+</ul><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-code-structure-id-code-structure-a-structuring-your-code" id="-a-name-code-structure-id-code-structure-a-structuring-your-code" class="toc-bookmark" rel="bookmark" title="Structuring your code"></a><span class="toc-number">4.  </span> <a name="code_structure" id="code_structure"></a>Structuring your code</h2>
+<p>See <a href="../coderules/structure.html">here</a>.</p>
+<div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-java-classes-id-java-classes-a-writing-java-classes" id="-a-name-java-classes-id-java-classes-a-writing-java-classes" class="toc-bookmark" rel="bookmark" title="Writing Java Classes"></a><span class="toc-number">5.  </span> <a name="java_classes" id="java_classes"></a>Writing Java Classes</h2>
+<p>See <a href="../coderules/java-classes.html">here</a>.</p>
+<div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-javadoc-tags-id-javadoc-tags-a-javadoc-tags" id="-a-name-javadoc-tags-id-javadoc-tags-a-javadoc-tags" class="toc-bookmark" rel="bookmark" title="JavaDoc Tags"></a><span class="toc-number">6.  </span> <a name="javadoc_tags" id="javadoc_tags"></a>JavaDoc Tags</h2>
+<ul><li>The following JavaDoc tags should be used for highlighting important aspects of a method or a class:
+<ul><li><code>@ui</code> or <code>@swing</code> or <code>@swt</code> - This method needs to be called from the UI thread, otherwise an exception might occur.</li>
+<li><code>@nonBlocking</code> - This method does return before finishing its activities. If there is at least one method is a class which is non-blocking it is highly recommended to put <code>@blocking</code> to all other methods to help users recognize that blocking behavior is important for this class</li>
+<li><code>@blocking</code> - This method is potentially long-running and blocks until it is done. This is the default for all method, which are unmarked.</li>
+<li><code>@valueObject</code> - The objects of this class are immutable. All methods are side effect free.</li>
+<li><code>@nonReentrant</code> - This method cannot be called twice at the same time.</li>
+<li><code>@threadsafe</code> - This method can safely be called twice at the same time.</li>
+<li><code>@caching</code> - If possible, this method uses a cache to calculate the return value.</li>
+</ul></li>
+<li>Threading and Concurrency
+<ul><li>Try to avoid instantiating the class <code>Thread </code>directly but rather use a <code>ThreadFactory </code>(in particular the <code>NamedThreadFactory</code> so that your threads are named) or even better an <code>Executor</code>.</li>
+<li>Spend some time learning about the <a href="http://java.sun.com/javase/6/docs/api/java/util/concurrent/package-summary.html" target="_top">Java Concurrency library java.util.concurrent</a>.</li>
+</ul></li>
+</ul><h3><a name="no-author-tags" id="no-author-tags"></a>No @author tags</h3>
+<p>We don't use @author tags in new code because of the following two reasons:</p>
+<ul><li>Such tags do not reliably point to a person that can be asked questions concerning the tagged file. Quite a few people working on Saros are students which usually stay in project for only a short amount of time.</li>
+<li>Such tags do not accurately represent the actual involvement of/work done by a certain developer. More often than not, developers in our project work in files they did not create. If anyone really wants to determine the authorship of certain files, our version control does a much better job by accurately crediting both the developers and reviewers of each commit.</li>
+</ul><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-progress-and-cancelation-id-progress-and-cancelation-a-progress-amp-cancelation-101" id="-a-name-progress-and-cancelation-id-progress-and-cancelation-a-progress-amp-cancelation-101" class="toc-bookmark" rel="bookmark" title="Progress &amp; Cancelation 101"></a><span class="toc-number">7.  </span> <a name="progress_and_cancelation" id="progress_and_cancelation"></a>Progress &amp; Cancelation 101</h2>
+<p>Whenever a method is long-running, i.e. there is a chance that it will take longer than 100ms or involves any external factors such as the user or input/output, the software engineer is responsible to provide a way to track progress of the operation and provide to the caller the possibility to cancel the operation.</p>
+<p>If the software engineer does not provide such opportunity the user experience might be reduced. For instance in Saros, there used to be no possibility to cancel a file transfer from one user to the other but just to cancel in between the files. This behavior seems okay, but once we started to see archive files of 10 MB and more, which could only be canceled by disconnecting from the Jabber-Server, the undesireability of the behavior becomes pretty clear.</p>
+<p>Fortunately enough there is a straight-forward and simple solution, which also improves the general threading behavior of the application: The class to use is called <code>SubMonitor</code> which implements the <code>IProgressMonitor</code> interface.</p>
+<p>Now all methods which are long running, need to be changed to take a <code>SubMonitor</code> as a last parameter (this is our convention):</p>
+<pre>public Result computeSomething(List<something> input, ..., SubMonitor progress){
+  //something
+}</something></pre><p>Inside those methods, first, we need to initialize the <code>ProgressMonitor</code> with the name of the task and the number of steps this task will take (if the number of steps is unknown we set it to a large integer, 10000 is our convention):</p>
+<pre>progress.beginTask("Computing Something", input.size());</pre><p>Now whenever we have made some progress towards this task, we can report this to the monitor:</p>
+<pre>for (Something some : input) {
+  ... process input
+  progress.worked(1);
+}</pre><p>At the end of the task, we should report, that we are done with the task:</p>
+<pre>progress.done()</pre><p>This basic contract of <code>beginTask()</code>, <code>worked()</code>, and <code>done()</code> is sufficient to achieve the basic uses of progress monitoring.</p>
+<div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-nesting-progress-id-nesting-progress-a-nesting-progress" id="-a-name-nesting-progress-id-nesting-progress-a-nesting-progress" class="toc-bookmark" rel="bookmark" title="Nesting Progress"></a><span class="toc-number">8.  </span> <a name="nesting_progress" id="nesting_progress"></a>Nesting Progress</h2>
+<p>In many cases the situtation is a little bit more complicated, as the operation that is long-running is making calls to other long-running operations as well. To solve this problem, we need to create <strong>child progress monitors</strong>, which consume a given number of work steps from their parent:</p>
+<pre style="line-height: normal; word-wrap: break-word;">public void computeInTwoSteps(IProgressMonitor monitor){
+    SubMonitor subMonitor = SubMonitor.convert(
+                                     monitor, 
+                                     "Compute in two steps", 
+                                     2
+                                   );
+    progress.beginTask("Compute in two steps", 2); 
+    computeFirstStep(subMonitor.newChild(1)); 
+    computeSecondStep(subMonitor.newChild(1)); 
+    progress.done();
+}</pre><p>This code will pass two SubMonitors to the two methods, which then are free to use them just as the parent method did:</p>
+<pre>public void computeFirstStep(SubMonitor progress){
+ 
+  progress.beginTask("Compute the first step", 140);
+  ...
+  progress.worked(5); // etc.
+  ...
+  progress.done();
+
+}</pre><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-reporting-information-to-a-user-id-reporting-information-to-a-user-a-reporting-information-to-the-user" id="-a-name-reporting-information-to-a-user-id-reporting-information-to-a-user-a-reporting-information-to-the-user" class="toc-bookmark" rel="bookmark" title="Reporting information to the user"></a><span class="toc-number">9.  </span> <a name="reporting_information_to_a_user" id="reporting_information_to_a_user"></a>Reporting information to the user</h2>
+<p>A progress monitor provides 3 ways to report information from a long running operation to the user</p>
+<ul><li>The amount of steps already worked as given by <code>worked()</code></li>
+<li>The name of the task, as set using <code>beginTask(String)</code> and <code>setTaskName(String)</code></li>
+<li>The name of the sub-task, as set using <code>subTask(String)</code></li>
+</ul><p>This information is typically presented to the user as a Dialog with a message being equal to the taskname of the top level progress monitor, a progress bar showing the growing amount of work already done and a label for the current sub-task which switches everytime the sub-task is being set.</p>
+<p>Since the taskName is fixed (by default), only the top level task name is shown to the user. The task name of the nested operations are never shown to the user. To report status messages from nested operations, the sub-task needs to be used:</p>
+<pre>public void computeInTwoSteps(SubMonitor progress){
+ 
+  progress.beginTask("Compute in two steps", 2);
+ 
+  progress.subTask("Two Step Computation: Step 1");
+  computeFirstStep(progress.newChild(1));
+ 
+  progress.subTask("Two Step Computation: Step 2");
+  computeSecondStep(progress.newChild(1));
+ 
+  progress.done();
+
+}</pre><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-dealing-with-unspecified-length-operations-id-dealing-with-unspecified-length-operations-a-dealing-with-operations-of-unspecified-length" id="-a-name-dealing-with-unspecified-length-operations-id-dealing-with-unspecified-length-operations-a-dealing-with-operations-of-unspecified-length" class="toc-bookmark" rel="bookmark" title="Dealing with operations of unspecified length"></a><span class="toc-number">10.  </span> <a name="dealing_with_unspecified_length_operations" id="dealing_with_unspecified_length_operations"></a>Dealing with operations of unspecified length</h2>
+<p>To have a progress dialog on operations for which the amount of steps are unknown, the following solution is recommended:</p>
+<pre>while (!done()) {
+  ... do work
+
+  progress.setWorkRemaining(1000);
+  progress.worked(1);
+}</pre><p>This code will advance the progress bar 0,1% of the remaining total of the progress monitor and thus logarithmically approach 100% worked. The percentage 0,1% should be adjusted to achieve 50% progress on the expected number of work steps.</p>
+<div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-cancellation-id-cancellation-a-cancellation" id="-a-name-cancellation-id-cancellation-a-cancellation" class="toc-bookmark" rel="bookmark" title="Cancellation"></a><span class="toc-number">11.  </span> <a name="cancellation" id="cancellation"></a>Cancellation</h2>
+<p>To achieve <strong>cancellation</strong> support in an operation, we should check frequently whether the user has requested that we stop our tasks:</p>
+<pre>for (Something some : input){
+  if (progress.isCanceled())
+    return;
+  ... process input
+  progress.worked(1)
+}</pre><p>The easiest way to response to a request for cancellation is to just return as shown above, but in most cases this is undesirable, because the caller will not know whether the operation finished or not. Instead, methods should rather throw a <code>CancellationException</code> so that a caller can recognize that the operation was canceled:</p>
+<pre>public BigInteger factorial(int n, SubMonitor progress){
+ 
+  progress.beginTask("Computing Factorial of " + n, n);
+ 
+  BigInteger result = BigInteger.ONE;
+ 
+  for (int i = 1; i &lt; n; i++) {
+    if (progress.isCanceled())
+      throw new CancellationException();
+ 
+    result = result.multiply(BigInteger.valueOf(i));
+    progress.worked(1);
+  }
+ 
+  progress.done();
+  return result;
+}</pre><p>Btw: It is an convention that we try to avoid <code>InterruptedException</code> for this, because it is a checked exception and thus cumbersome for the caller. To maintain this convention, a method MUST specify whether it is cancelable, by providing the demonstrated JavaDoc tag.</p>
+<div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-software-design-rules-id-software-design-rules-a-software-design-rules" id="-a-name-software-design-rules-id-software-design-rules-a-software-design-rules" class="toc-bookmark" rel="bookmark" title="Software Design Rules"></a><span class="toc-number">12.  </span> <a name="software_design_rules" id="software_design_rules"></a>Software Design Rules</h2>
+<ul><li>Distinguish clearly between the common building blocks of applications, namely:
+<ul><li>Services - Providers of functionality that can be well encapsulated</li>
+<li>Entities - Mutable classes that represent the business world. Group these into aggregates.</li>
+<li>Values - Use the <a href="http://www.c2.com/cgi/wiki?ValueObject" target="_top">Value Object Pattern</a> to ensure that users of the class can rely on the objects to be immutable and all methods to be side effect free. This helps A LOT when using a class.</li>
+</ul></li>
+<li>Avoid implementing many interfaces in the same class whereever possible (more than one is necessary only in rare cases). Use nested or anonymous classes instead. It makes it much easier to understand and modify your code.</li>
+</ul><ul><li>The Singleton Pattern is a inferior solution to define the architecture of an application compared to using Dependency Injection (see next section). To achieve the lazy semantics often also associated with the Singleton Pattern you should inject a dependency to a lazy initializer of the component that you actually need instead.</li>
+</ul><h3><a name="dependency_injection" id="dependency_injection"></a>Dependency Injection</h3>
+<ul><li>Saros uses a dependency injection framework called PicoContainer, because it improves the readability, changeability and modularization of the architecture of a software application.</li>
+<li>Short introduction:
+<ul><li>The goal of dependency injection is to solve the basic software engineering problem of how a object of a class A (usually a class representing a component) receives the objects of other classes B and C which it needs during the programm execution.
+<ul><li>A typical example would be that the application core needs access to a preference object to work.</li>
+</ul></li>
+<li>The solution that dependency injection provides is to let this problem be solved by a dependency injection container, which has a defined way to resolve such dependencies.</li>
+<li>This involves three steps:
+<ol><li>Telling the dependency container which classes need to be managed by it
+<ul><li>In PicoContainer:
+<ul><li><code>container.addComponent(A.class)</code></li>
+</ul></li>
+</ul></li>
+<li>Changing the classes so that the container can identify what constitutes the classes dependencies.
+<ul><li>See below</li>
+</ul></li>
+<li>Asking the container for object instances with all their dependencies being set.
+<ul><li>In PicoContainer:
+<ul><li><code>container.getComponent(A.class)</code></li>
+</ul></li>
+</ul></li>
+</ol></li>
+<li>For the second step there are three possibilities:
+<ol><li>Constructor injection - The dependency container will use the constructor with the least amount of parameters to create an object if it needs one. This is the cleanest type of injection, since the dependencies are available to an instance of the class right from the start.</li>
+<li>Annotated field injection - The dependency container will look for fields with special annotation tags (in PicoContainer <code>@Inject</code>) and AFTER the constructor has been called will fill those fields with the dependencies. This type of injection, provides the code with the best readability (constructors with many parameters are difficult to read) but is more difficult to manage, because dependencies are not available in the constructor.</li>
+<li>Setter injection - Injection is done via setters. This is a possibility we do not use.</li>
+</ol></li>
+<li>Recommendation: Use annotated field injection only from GUI classes. If a constructor has got too much input parameters it may be the time to think again about the design, which should avoid the god class pattern.</li>
+</ul></li>
+<li>Dependency injection and Eclipse
+<ul><li>Since Eclipse creates many objects itself such as Views and Actions, we cannot use constructor injection with such components.</li>
+<li>Instead a reinjector needs to be used which can take an existing object and using annotated field injection will pass the missing dependencies.</li>
+</ul></li>
+<li>Some literature:
+<ul><li><a href="http://martinfowler.com/articles/injection.html" target="_top">Martin Fowler - Inversion of Control Containers and the Dependency Injection pattern</a></li>
+<li><a href="http://www.picocontainer.org/introduction.html" target="_top">PicoContainer introduction</a></li>
+</ul></li>
+</ul><h3><a name="broadcast_listener" id="broadcast_listener"></a>Broadcast Listener</h3>
+<p>To avoid repeated code blocks in an Observable like</p>
+<pre>class Observable {
+ 
+  List<listener> listeners = new ...
+  public void addListener(Listener listener){listeners.add(listener)}
+  public void removeListener(Listener listener){...}
+ 
+  public void someMethod() {
+    ...
+    // notify all listeners
+    for (Listener l : listeners) {
+      l.notify();
+    }
+  }
+ 
+  public void someMethod2() {
+    ...
+    // notify all listeners again
+    for (Listener l : listeners) {
+     l.notify();
+    }
+  }
+ 
+}</listener></pre><p>It is recommended to use a helper class <code>BroadcastListener</code> that provides a method to notify all its registered listeners. The <code>BroadcastListener</code> should be a singleton managed by <code>PicoContainer</code>.</p>
+<pre>public class BroadcastListener implements Listener {
+ 
+  List<listener> listeners = new ...
+  public void add(Listener listener){listeners.add(listener)}
+  public void remove(Listener listener){...}
+ 
+  public void notify() {
+    for (Listener l : listeners) {
+      l.notify();
+    }
+  }
+ 
+}</listener></pre><p>The code for an Observable becomes therfore much simpler. It only needs to know the <code>BroadcastListener</code> and can easily notify all registered listeners at once.</p>
+<pre>class Observable {
+ 
+  BroadcastListener listener = new BroadcastListener();
+ 
+  public void someMethod(){
+    ...
+    listener.notify();
+  }
+ 
+  public void someMethod2(){
+    ...
+    listener.notify();
+   }
+}</pre><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-common-templates-id-common-templates-a-common-templates" id="-a-name-common-templates-id-common-templates-a-common-templates" class="toc-bookmark" rel="bookmark" title="Common Templates"></a><span class="toc-number">13.  </span> <a name="common_templates" id="common_templates"></a>Common Templates</h2>
+<h3>Registering a listener on a changing instance:</h3>
+<pre>public void setSharedProject(SharedProject newSharedProject) {
+ 
+  if (sharedProject == newSharedProject)
+    return;
+ 
+  // Unregister from old project
+  if (sharedProject != null) {
+    sharedProject.removeListener(this);
+  }
+ 
+  sharedProject = newSharedProject;
+ 
+  // Register to new project
+  if (sharedProject != null) {
+    sharedProject.addListener(this);
+  }
+}</pre><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-documentation-id-documentation-a-documentation" id="-a-name-documentation-id-documentation-a-documentation" class="toc-bookmark" rel="bookmark" title="Documentation"></a><span class="toc-number">14.  </span> <a name="documentation" id="documentation"></a>Documentation</h2>
+<ul><li>JavaDoc documentation and names should be meaningful and make the programming element understandable with minimum insight into the code. If your comments make the code more difficult to understand, remove them.</li>
+<li>Don't use single line comments (starting with //) for multi line text, use instead<br /><pre>/*
+ * one comment that takes up at least
+ * two lines
+ */</pre></li>
+<li>Comments should describe complex code in <strong>shorter</strong> text. Comments like "Create HashMap", "Set Value", "Loop here", or "else" should be removed.</li>
+</ul><h3>Kinds of comments</h3>
+<p>This section is based on Steve McConnell's Code Complete, Chapter 32.</p>
+<p>There are six categories of comments:</p>
+<ol><li><strong>Repeat of the Code</strong>
+<ul><li>If something is not complex and thus documentation repeats code, you should not document at all. For instance, don't document getters and setters (an exception would be to explain what the variable actually contains that you are getting).</li>
+<li>A counter-example:<br /><pre>/**
+ * return a stack of String,
+ * @param text
+ * @return Stack
+ */
+
+public Stack getFormatJavadocLine(String text) {
+
+  StringTokenizer st = new StringTokenizer(text, "\n");
+  Stack stack = new Stack();
+
+  while (st.hasMoreTokens()) {
+    stack.add(st.nextToken());
+  }
+
+  return stack;
+}</pre></li>
+<li>The documentation is absolutely useless as it just repeats the signature and even fails to explain the method name. Furthermore the method name is wrong for the task that is actually performed. The important question whether this method returns a stack of the individual lines in text from top to bottom or bottom to top remains unanswered.</li>
+</ul></li>
+<li><strong>Explanation of the Code</strong>
+<ul><li>If the code needs to be explained, it is usually better to improve the code instead of adding comments.</li>
+</ul></li>
+<li><strong>Marker in the Code</strong>
+<ul><li>Marker comments are notes for the developers that the work isn't done yet. They should not be left in the code. If you have to mark a section in the code, use „TODO“. This way all marker comments will be standardized and it is easier to locate them.
+<pre>/*
+ * TODO FIX: Our caller should be able to distinguish whether the
+ * query failed or it is an IM client which sends back the message
+ */</pre></li>
+</ul></li>
+<li><strong>Summary of the Code</strong>
+<ul><li>Comments that summarize the code in a few sentences can be valuable especially for readers who haven't written the code. They can scan these comments more quickly than the code.
+<pre>/*
+ * move all chess pieces to start position
+ */</pre></li>
+</ul></li>
+<li><strong>Description of the Code's Intent</strong>
+<ul><li>Intent comments explain the purpose of a section of code. In contrast to the summary comments which operate at the level of the solution the intent comment operates at the level of the problem.
+<pre>/*
+ * initialize a new chess game
+ */</pre></li>
+</ul></li>
+<li><strong>Information that cannot possibly be expressed by the Code Itself</strong>
+<ul><li>Some information needs to be written in comments since they cannot be expressed in code. This can be copyright notices, version numbers, notes about the code's design, optimization notes and so on.</li>
+</ul></li>
+</ol><p>Acceptable code comments are summary comments (4.), intent comments (5.), and information that cannot be expressed in code (6.). Markers (3.) are acceptable during development but should be removed before release. Try to avoid comments that repeat (1.) or explain the code (2.).</p>
+<h3>What to comment</h3>
+<p>Generally you should document the code starting from the highest level of code hierarchy. This means that all packages need a documentation followed by interfaces and classes. All documentation should be in JavaDoc comments in order to automatically generate HTML source code documentation.</p>
+<ul><li>Each package should be documented in a package-info.java file located in the package folder.
+<ul><li>The package description should help the reader to understand, what the package is about and what its intent is. It should also inform about terms to adhere when using or modifying this package. Important relations to other packages should be described here.</li>
+</ul></li>
+</ul><ul><li>Each interface should be documented.
+<ul><li>The comments in the interface should provide a short description of what you can use it for. For all exposed routines you should at a minimum document each parameter and each return value but hide implementation details.</li>
+</ul></li>
+</ul><ul><li>Each class should be documented.
+<ul><li>The description of the class should provide a short overview of what this class is about. Design decisions and limitations should be mentioned as well.</li>
+</ul></li>
+</ul><ul><li>Methods should be documented, if they are complex enough and it will be helpful for other readers to summarize or explain the purpose of these methods.</li>
+<li>Important objects and variables should also be briefly documented.</li>
+</ul><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-before-committing-id-before-committing-a-before-committing-formatting-and-cleaning-up" id="-a-name-before-committing-id-before-committing-a-before-committing-formatting-and-cleaning-up" class="toc-bookmark" rel="bookmark" title="Before Committing: Formatting and cleaning-up"></a><span class="toc-number">15.  </span> <a name="before_committing" id="before_committing"></a>Before Committing: Formatting and cleaning-up</h2>
+<p>See <a href="../coderules/before-committing.html">here</a>.</p>
+<div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-error-reporting-exception-handling-logging-id-error-reporting-exception-handling-logging-a-error-reporting-exception-handling-and-logging" id="-a-name-error-reporting-exception-handling-logging-id-error-reporting-exception-handling-logging-a-error-reporting-exception-handling-and-logging" class="toc-bookmark" rel="bookmark" title="Error Reporting, Exception Handling and Logging"></a><span class="toc-number">16.  </span> <a name="error_reporting_exception_handling_logging" id="error_reporting_exception_handling_logging"></a>Error Reporting, Exception Handling and Logging</h2>
+<p>We expect that all source code used in thesis to deal gracefully with errors. The goals to aim for should be:</p>
+<ul><li>Provide information to the user that something went wrong and how s/he can fix the problem (if). A typical example for this is a failed to log-in to a server, because the password is wrong which should lead to a error-dialog box. In the best of all cases this error message will offer the user to correct the problem or lead him to the place to correct it (for instance a preference dialog).</li>
+<li>Provide information to the developer when some operation failed that should not have (unexpected) and where the problem occurred (stack-trace).</li>
+<li>Provide information about the kind of events that happened internally (tracing/logging). It should be possible to disable these.</li>
+</ul><p>The first step to achieve this, is to make sure that you notice when things go wrong. Thus, all Runnables passed to Threads or Executors and all methods called from 3rd party software, such as Actions called from Eclipse, or Listeners from the network API need to be made secure as to catch all <code>RuntimeException</code> that might have slipped up.</p>
+<p>Use the following method for this (you might want to pass up <code>RuntimeException</code>s up the stack as well):</p>
+<pre>/**
+ * Return a new Runnable which runs the given runnable but catches all
+ * RuntimeExceptions and logs them to the given logger.
+ *
+ * Errors are logged and rethrown.
+ *
+ * This method does NOT actually run the given runnable, but only wraps it.
+ */
+public static Runnable wrapSafe(final Logger log, final Runnable runnable) {
+  return new Runnable() {
+    public void run() {
+      try {
+        runnable.run();
+      } catch (RuntimeException e) {
+        log.error("Internal Error:", e);
+      } catch (Error e) {
+        log.error("Internal Fatal Error:", e);
+
+        // Rethrow errors (such as an OutOfMemoryError)
+        throw e;
+      }
+    }
+  };
+}</pre><p>When developing in Eclipse the following code-snippets might help:</p>
+<ul><li>Error reporting to the user can be done using an ErrorDialog:
+<pre>Display.getDefault().syncExec(new Runnable() {
+    public void run() {
+        MessageDialog.openError(
+            Display.getDefault().getActiveShell(),
+            "Dialog Title", "Error message"
+        );
+    }
+});</pre></li>
+<li>Error reporting for the developer can be done using the ErrorLog:<br /><pre>YourPlugin.getDefault().getLog().log(
+  new Status(IStatus.ERROR, "Plug-In ID goes here", IStatus.ERROR, message, e));</pre></li>
+<li>Input from the user needs always to be checked and untainted on input.
+<ul><li>Error messages need to be human readable.</li>
+<li>Exceptions need to be handled correctly, i.e.
+<ul><li>If the program could do something about the exception it should try (for instance repeat an failed operation).</li>
+<li><s>Otherwise an unchecked exception should be thrown to prevent =throws=-clauses littering the code.</s></li>
+<li>If you can't handle the exception then throw it back to the caller</li>
+</ul></li>
+</ul></li>
+</ul><p>Anti-example:</p>
+<pre>public Javadoc updateJavadoc(String filename, String name,
+  String newJavadocText, int isType) {
+  Javadoc jd = null;
+  try {
+    ... Try to update Javadoc ...
+  } catch (Exception e) { // No, no, no!
+    e.printStackTrace();
+  }
+
+  System.out.println("The new javadoc-------\n" + jd);
+  return jd;
+}</pre><p>How to do it right:</p>
+<pre>public Javadoc updateJavadoc(String filename, String name, String newJavadocText, int isType) 
+  throws IOException {
+
+  Javadoc jd = null;
+  try {
+    ... Try to update Javadoc ...
+  } catch (IOException e){ // Catch the checked exceptions that occur
+    // bring the internal logic back to a stable state (if you can)
+    throw e; // let the caller handle this exception
+  }
+
+  System.out.println("The new javadoc-------\n" + jd);
+  return jd;
+}</pre><h3>Logging with Log4J</h3>
+<ul><li>We use one private static final logger per class. An editor template for Eclipse:<br /><code>private static final Logger LOG = LOgger.getLogger(${enclosing_type}.class);</code></li>
+<li>We use the following Log-Levels:
+<ul><li><code>ERROR</code> An error should be printed if something occurred which is the fault of the developer and which will cause unexpected behavior for the user.</li>
+<li><code>WARN</code> A warning should be printed if something occurred which is the fault of the developer but which while not expected to occur should be handled gracefully by the application.</li>
+<li><code>INFO</code> Any information that is of interest to the user may be printed using INFO.</li>
+<li><code>DEBUG</code> Any information which might be useful for the developer when figuring out what the application did may be printed as DEBUG. The amount of information printed should not cause the performance of the application to suffer (use <code>TRACE</code> for this).</li>
+<li><code>TRACE</code> Detailed information about the program execution should use the TRACE level. This information usually is so detailed that the application runs slower and thus should never be enabled in a production version.</li>
+</ul></li>
+</ul><h3>Dealing with InterruptedException</h3>
+<ul><li>When calling a blocking method, Java uses InterruptedException to signal that the waiting thread was told to stop waiting.</li>
+<li>As a a caller to a blocking method it is your responsibility to deal with the possibility of being interrupted. This is why exception is checked in Java.</li>
+<li>The contract of InterruptedException is the following:
+<ul><li>If interrupted a method honoring the contract MUST either throw the InterruptedException or set the interrupt-flag.</li>
+</ul></li>
+<li>Since the InterruptException-contract is assumed to be honored by all methods in Java, there are three ways of dealing with the InterruptedException:
+<ol><li>Rethrowing the InterruptedException to tell callers that this method might be interrupted: As we do not like checked exception this is an inferior solution to the problem.</li>
+<li>Resetting the interrupt flag
+<ul><li>It is your responsibility to always reset the Interrupt flag in case you catch the Exception, because somebody who called you might depend on it. This will look like this and is the normal case for 90% of all cases:
+<pre>try {
+  Thread.sleep(500);
+} catch(InterruptedException e){
+  // The line of code will continue after the catch
+  Thread.currentThread().interrupt();
+}</pre></li>
+<li>This is recommended even if you are sure that you will never be interrupted (because the program might change in the future)</li>
+<li>Special case: Spinning / Busy Waiting
+<ul><li>If you use Thread.sleep() inside a while() loop, then you cannot use the above pattern without leaving the while loop, because Thread.sleep() (all methods that honor the contract of InterruptedException) will return immediately without sleeping. Thus your while loop becomes a busy waiting loop.</li>
+<li>If you really do not want to be interruptible, then you need to do the following:<br /><pre>boolean interrupted = false;
+try {
+  while (looping){
+    // do stuff
+    try {
+      Thread.sleep(500);
+    } catch(InterruptedException e){
+      interrupted = true;
+    }
+  }
+} finally {
+  if (interrupted)
+    // The line of code will continue after the catch
+    Thread.currentThread().interrupt();
+}</pre></li>
+</ul></li>
+</ul></li>
+<li>Tell others that you violate the contract: Add to the signature of your method, that you do not support the contract of Thread.interrupt(). Be aware that by violating the InterruptedException-contract you put all your callers into violation as well (since if handle an InterruptedException incorrectly they cannot honor the contract anymore). Use the following to tell callers that you do not honor the contract:<br /><pre>/**
+ * @nonInterruptable This method does not support being interrupted
+ */</pre></li>
+</ol></li>
+<li>BTW: There is no obligation in the contract for you to exit as quickly as possible.</li>
+<li>For more read: <a href="http://www-128.ibm.com/developerworks/java/library/j-jtp05236.html" target="_top">http://www-128.ibm.com/developerworks/java/library/j-jtp05236.html</a></li>
+</ul><div class="toc-filter-back-to-top"><a href="70.html#top">Back to top</a></div><h2 class="toc-header toc-header-number"><a name="-a-name-little-things-and-best-practices-id-little-things-and-best-practices-a-little-things-and-best-practices" id="-a-name-little-things-and-best-practices-id-little-things-and-best-practices-a-little-things-and-best-practices" class="toc-bookmark" rel="bookmark" title="Little Things and Best Practices"></a><span class="toc-number">17.  </span> <a name="little_things_and_best_practices" id="little_things_and_best_practices"></a>Little Things and Best Practices</h2>
+<ul><li>Don't use they keyword "static" at all unless there is very good reason to do so which is backed up by a detailed explanation providing a formal analysis of correctness and perhaps side effects.</li>
+<li>No direct calls of GUI components from the business logic. Keep model and view separated.</li>
+<li>Mark overridden methods with <code>@Override</code> to<span style="font-size: 1.231em; white-space: pre-wrap; line-height: normal;"><span style="font-size: 13px; line-height: 20px;"> increase the transparency of the code.</span></span></li>
+<li>To convert a primitive to a <code>String </code>use<code> String.valueOf(...)</code>. Don't use <code>"" + i</code>.</li>
+<li>To convert from a primitive use <code>Integer.parseInt(...)</code> and similiar.</li>
+<li>Don't use <code>StringBuffer </code>unless you need thread safety, use <code>StringBuilder </code>instead.</li>
+<li>Similarly don't use <code>Vector</code>, use <code>ArrayList</code></li>
+<li>Use <a href="http://commons.apache.org/io/" target="_top">IO Utils</a> when dealing with reading and writing files. Do not try to invent the wheel and read individual bytes out of streams.
+<ul><li>Do use <code>IOUtils.closeQuitely()</code> for closing streams, as it handles all cases (null, exceptions) in one line</li>
+</ul></li>
+<li>Never subclass <code>Thread</code>, always pass a <code>Runnable </code>into the constructor instead</li>
+<li>Run your program using <code>-ea</code> and use <code>asserts </code>to let people understand what you were assuming in your code.</li>
+<li>To convert from an <code>IPath</code> to a <code>String</code> use <code>IPath.toPortableString()</code> to convert from a <code>String</code> to an <code>IPath</code> use <code>Path.fromPortableString()</code> (one could also use <code>toString()</code> and <code>new Path(String)</code>, but we prefer the <code>from/toPortable</code> version).</li>
+<li>If <code>equals()</code> is implemented in a class it is MANDATORY to implement <code>hashCode() </code>as well, otherwise <code>HashSets </code>and other classes which rely on the contract of <code>hashCode() </code>will not work. To do this correctly always use the Eclipse Generator (Source -&gt; Generate <code>hashCode() </code>and <code>equals()</code>).</li>
+<li>Always document the reason if <code>x.compareTo(y) == 0</code>, but <code>x.equals(y) </code>returns <code>false</code></li>
+<li>Use <code>enum</code> instead of a bunch of <code>static final int</code> fields. Then you have type safety for related constants and more readable debugging output is possible because you get meaningful names instead of "magic" numbers.</li>
+<li>The creation of new utils classes, which tend to be used by only one other class, is strongly discouraged. Consider the use of inner classes or moving the functionality to existing utils instead.</li>
+</ul><div class="toc-filter-back-to-top last"><a href="70.html#top">Back to top</a></div></div></div></div>  </div>
+
+      <footer>
+                </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+  </section> <!-- /#main -->
+  
+      <aside id="sidebar-first" role="complementary" class="sidebar clearfix">
+      <div class="region region-sidebar-first">
+  <div id="block-menu-block-1" class="block block-menu-block">
+
+        <h2 >Develop on Saros</h2>
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first expanded menu-mlid-572"><a href="../checkout-and-first-steps.html">Check-Out and First Steps</a><ul class="menu"><li class="first leaf has-children menu-mlid-574"><a href="../setup-dev-environment.html">Set up development environment</a></li>
+<li class="last leaf has-children menu-mlid-592"><a href="../make-first-change.html">Making changes to Saros</a></li>
+</ul></li>
+<li class="expanded menu-mlid-916"><a href="../ongoing-work.html">Ongoing Work</a><ul class="menu"><li class="first leaf has-children menu-mlid-694"><a href="../saros-for-intellij.html">Saros for IntelliJ</a></li>
+<li class="leaf menu-mlid-872"><a href="../html-gui.html">Saros HTML GUI</a></li>
+<li class="leaf menu-mlid-917"><a href="../build-server-migration.html">Build Server Migration</a></li>
+<li class="leaf menu-mlid-936"><a href="../stf-cross-ide.html">STF across IDEs</a></li>
+<li class="last leaf has-children menu-mlid-924"><a href="../saros-for-netbeans.html">Saros for Netbeans</a></li>
+</ul></li>
+<li class="expanded active-trail menu-mlid-374"><a href="../guidelines.html" class="active-trail">Guidelines</a><ul class="menu"><li class="first leaf menu-mlid-375"><a href="../contribution.html">Contribution Rules</a></li>
+<li class="leaf has-children active-trail active menu-mlid-432"><a href="../coderules.1.html" title="Coding Guidelines and Rules" class="active-trail active">Coding Conventions</a></li>
+<li class="leaf menu-mlid-343"><a href="../usability.html" title="Guidelines to ensure Usability">Usability Guidelines</a></li>
+<li class="leaf menu-mlid-433"><a href="../TicketGuidelines.html">Ticket Guidelines</a></li>
+<li class="last leaf menu-mlid-692"><a href="../ci-rules.html">Jenkins Rules</a></li>
+</ul></li>
+<li class="expanded menu-mlid-931"><a href="../tools.html">Tools</a><ul class="menu"><li class="first leaf menu-mlid-357"><a href="../jtourbus.html" title="Get involved with JTourBus">JTourBus</a></li>
+<li class="leaf menu-mlid-932"><a href="../archnemesis.html">Archnemesis</a></li>
+<li class="leaf menu-mlid-934"><a href="../sia.html">Sia</a></li>
+<li class="last leaf menu-mlid-933"><a href="../sonarqube-gerrit-bridge.html">SonarQube-Gerrit-Bridge</a></li>
+</ul></li>
+<li class="expanded menu-mlid-341"><a href="../processes.html" title="Processes in Saros">Processes</a><ul class="menu"><li class="first leaf menu-mlid-351"><a href="../review.html" title="Information about the review process">Review</a></li>
+<li class="leaf menu-mlid-352"><a href="../ReleaseProcess.html" title="Our Release Process">Release</a></li>
+<li class="leaf has-children menu-mlid-353"><a href="../testing.html" title="Information about the testing process">Testing</a></li>
+<li class="leaf menu-mlid-356"><a href="../bugtracker.html" title="Watch the bug tracker">Bug Tracking</a></li>
+<li class="last leaf menu-mlid-354"><a href="../documentation.html" title="Information about the documentation process">Documentation</a></li>
+</ul></li>
+<li class="leaf menu-mlid-430"><a href="../mailingslists.html">Mailinglists</a></li>
+<li class="leaf menu-mlid-388"><a href="https://sourceforge.net/p/dpp/bugs/" title="">Bug Tracker</a></li>
+<li class="leaf menu-mlid-335"><a href="https://sourceforge.net/projects/dpp/" title="Visit Saros at Sourceforge">Saros@Sourceforge</a></li>
+<li class="expanded menu-mlid-915"><a href="../gsoc.1.html">Google Summer of Code</a><ul class="menu"><li class="first last leaf menu-mlid-832"><a href="../gsoc/2015/ideas.html">2015 - Ideas</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-615"><a href="129.html">FAQ in daily practice</a><ul class="menu"><li class="first leaf menu-mlid-610"><a href="132.html" title="A change was integrated to master. How can I update my local code?">Update local code to master</a></li>
+<li class="leaf menu-mlid-606"><a href="130.html" title="I messed up my local copy of Saros. How can I reset/clean up/revert my changes?">Revert local changes</a></li>
+<li class="leaf menu-mlid-614"><a href="../upload-new-patch-set.html" title="Someone discovered an error/failure/typo. How can I upload a new patch set?">Upload a new patch set</a></li>
+<li class="leaf menu-mlid-612"><a href="133.html" title="My build failed. What&#039;s wrong with my change?">Building in Gerrit failed!</a></li>
+<li class="leaf menu-mlid-608"><a href="../gerrit-checkout-patch.html" title="Someone uploaded a change to Gerrit. How can I test this change?">Get &amp; run someones change</a></li>
+<li class="leaf menu-mlid-678"><a href="145.html" title="What is a Change? Patch set? Submit?">Change? Patch set? Submit?</a></li>
+<li class="leaf menu-mlid-670"><a href="../gerrit-groups-and-permissions.html" title="Which permissions do I have?">Check Gerrit permissions</a></li>
+<li class="leaf menu-mlid-672"><a href="142.html" title="How to delete an unwanted local branch in EGit?">Delete local branch</a></li>
+<li class="leaf menu-mlid-674"><a href="136.html">Duplicate Location Error</a></li>
+<li class="leaf menu-mlid-630"><a href="../gerrit-review.html" title="Someone wants that I review a change. How to review a change?">Review a change</a></li>
+<li class="leaf menu-mlid-668"><a href="140.html" title="How to run Saros STF tests locally?">Run STF tests locally</a></li>
+<li class="leaf menu-mlid-666"><a href="139.html" title="I ran an STF test (located in test/stf) and get an error! What&#039;s wrong?">STF tests fail</a></li>
+<li class="leaf menu-mlid-664"><a href="138.html" title="How to set up Saros for running local STF tests?">Set up STF tests</a></li>
+<li class="leaf menu-mlid-676"><a href="144.html" title="I want automate my testing process. How to write my own STF tests?">Write STF tests</a></li>
+<li class="last leaf menu-mlid-874"><a href="../git-recipes.html">Git use-cases</a></li>
+</ul></li>
+</ul></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </aside>  <!-- /#sidebar-first -->
+  
+  </div> <!-- end content-body -->
+<div class="clear"></div>
+<div id="footer" class="clearfix">
+    <div class="clear"></div>
+<div class="region region-footer">
+  <div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="http://www.mi.fu-berlin.de/fb/impressum/" target="_blank">Impressum</a> — <a href="../index.html%3Fq=user.html">Internal login</a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+<div class="clear"></div>
+<div id="copyright">Copyright &copy; 2019, Saros</div>
+</div> <!-- /#footer -->
+</div> <!-- /#wrapper -->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+<!--//--><![CDATA[// ><!--
+jQuery(document).ready( function($) { 
+	$( ".known-issue-box" ).accordion({ 
+		active: false, 
+		heightStyle: "content", 
+		collapsible: true 
+	}); 
+	$( ".known-issue-box" ).css( "visibility", "visible" ); });
+//--><!]]>
+</script>  </body>
+
+</html>

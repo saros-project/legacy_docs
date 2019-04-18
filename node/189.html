@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="../sites/saros-project.org/themes/saros/favicon.ico.html" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="189.html" />
+<link rel="canonical" href="../stf-cross-ide.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>STF across IDEs | Saros</title>
+  <style type="text/css" media="all">
+@import url("../modules/system/system.base.css%3Fp9abym.css");
+@import url("../modules/system/system.menus.css%3Fp9abym.css");
+@import url("../modules/system/system.messages.css%3Fp9abym.css");
+@import url("../modules/system/system.theme.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
+@import url("../modules/book/book.css%3Fp9abym.css");
+@import url("../modules/comment/comment.css%3Fp9abym.css");
+@import url("../modules/field/theme/field.css%3Fp9abym.css");
+@import url("../modules/node/node.css%3Fp9abym.css");
+@import url("../modules/search/search.css%3Fp9abym.css");
+@import url("../sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
+@import url("../modules/user/user.css%3Fp9abym.css");
+@import url("../modules/forum/forum.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
+@import url("../sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
+@import url("../sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+</style>
+  <script type="text/javascript" src="../misc/jquery.js%3Fv=1.4.4.html"></script>
+<script type="text/javascript" src="../misc/jquery.once.js%3Fv=1.2.html"></script>
+<script type="text/javascript" src="../misc/drupal.js%3Fp9abym.html"></script>
+<script type="text/javascript" src="../sites/all/modules/toc_filter/toc_filter.js%3Fp9abym.html"></script>
+<script type="text/javascript" src="../sites/saros-project.org/themes/touch/js/scrolltopcontrol.js%3Fp9abym.html"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saros","theme_token":"AGSQBdXVYek42zU9F_z2DdpNcAZ3pqJ-H0WTGoFXTl4","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/toc_filter\/toc_filter.js":1,"sites\/saros-project.org\/themes\/touch\/js\/scrolltopcontrol.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/ldap\/ldap_user\/ldap_user.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/toc_filter\/toc_filter.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/saros-project.org\/themes\/touch\/style.css":1,"sites\/saros-project.org\/themes\/saros\/saros_style.css":1}},"toc_filter_smooth_scroll_duration":"","urlIsAjaxTrusted":{"\/node\/189":true}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-189 node-type-page" >
+    <div id="wrapper" class="clearfix">
+<div id="header-top" class="clearfix">
+
+<div id="logo"><!--start logo-->
+      <a id="site_name_link" href="../index.html" title="Home">
+      <img src="../sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+    </a>
+    
+  <div id="name_slogan">
+          <a id="site-name" href="../index.html" title="Home" rel="home"><span>Saros</span></a>
+      
+          <br/>
+      <a id="site-slogan" id="site-name" href="../index.html" title="Home" rel="home"><span>Distributed Party Programming</span></a>
+      
+  </div><!--end name_slogan-->
+  
+
+<!--div id="site-slogan">Distributed Party Programming</div><!--site slogan-->
+</div><!--end logo-->
+
+
+
+
+ <!-- / start search box region -->
+    <div class="search-box">
+      <div class="region region-search-box">
+  <div id="block-search-form" class="block block-search">
+
+      
+  <div class="content">
+    <form action="189.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-GDnbcfPqxbrBlNIn0Nq1l6QoNGr9kR2dLZLwUwDLcHk" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </div> <!-- / end search box region -->
+  </div><!--end header-top-->
+<div id="header" class="clearfix"><!--start header--> 
+    <div id="main-menu">
+    <ul class="menu"><li class="first leaf"><a href="../home.html" title="Frontpage">Home</a></li>
+<li class="expanded"><a href="66.html">About Saros</a><ul class="menu"><li class="first leaf"><a href="../features.html" title="List of Saros features">Features</a></li>
+<li class="leaf"><a href="../screenshots.html" title="Get impressions with screenshots">Screenshots</a></li>
+<li class="leaf"><a href="../host-comic.html">Saros Host Comic</a></li>
+<li class="leaf"><a href="../what-others-say.html" title="Information about where Saros has been mentioned">What others say</a></li>
+<li class="last leaf"><a href="../history.html" title="Development history and people involved">History</a></li>
+</ul></li>
+<li class="expanded"><a href="../setup.html" title="Learn how to use Saros">Installation &amp; Set-Up</a><ul class="menu"><li class="first expanded"><a href="../installation.html" title="Installing Saros in Eclipse">Install Saros</a><ul class="menu"><li class="first last leaf"><a href="../setupXMPP.html" title="Setup your own XMPP Server (Advanced Users)">Setup own XMPP Server</a></li>
+</ul></li>
+<li class="last leaf"><a href="../GettingStarted.html">Getting Started with Saros</a></li>
+</ul></li>
+<li class="expanded"><a href="../support_home.html">Support</a><ul class="menu"><li class="first leaf"><a href="../mailing-list-chat.html" title="Information on how to reach the Saros team via mailing lists">Mailing Lists</a></li>
+<li class="leaf"><a href="../troubleshooting.html" title="Known problems when using Saros">Troubleshooting</a></li>
+<li class="leaf"><a href="../faq.html" title="Frequently asked questions">Saros FAQ</a></li>
+<li class="leaf"><a href="../compatibility.html">Plugin Compatibility</a></li>
+<li class="last leaf"><a href="../feedback.html" title="Information about the feature feedback">User Survey &amp; Statistics</a></li>
+</ul></li>
+<li class="expanded active-trail"><a href="../getinvolved.html" title="Learn how to develop on Saros" class="active-trail">Develop on Saros</a><ul class="menu"><li class="first expanded"><a href="../checkout-and-first-steps.html">Check-Out and First Steps</a><ul class="menu"><li class="first expanded"><a href="../setup-dev-environment.html">Set up development environment</a><ul class="menu"><li class="first leaf"><a href="../dev-environment-reqs.html">Environment Requirements</a></li>
+<li class="leaf"><a href="../install-subclipse.html">Install Subclipse for building Saros/E</a></li>
+<li class="leaf"><a href="../install-egit.html">Install EGit</a></li>
+<li class="leaf"><a href="../our-dev-workflow.html">Our workflow</a></li>
+<li class="leaf"><a href="../gerrit-login.html">Log in to Gerrit</a></li>
+<li class="leaf"><a href="../eclipse-setup-git.html">Setting your name and email address for using Gerrit</a></li>
+<li class="leaf"><a href="../eclipse-setup-ssh.html">Create and configure an SSH key for using Gerrit</a></li>
+<li class="leaf"><a href="../get-source-code.html">Get Saros source code</a></li>
+<li class="leaf"><a href="../import-code-style-profiles.html">Import code style profiles</a></li>
+<li class="last leaf"><a href="../run-saros-as-dev.html">Run your Saros</a></li>
+</ul></li>
+<li class="last expanded"><a href="../make-first-change.html">Making changes to Saros</a><ul class="menu"><li class="first leaf"><a href="124.html">Create a new local branch</a></li>
+<li class="leaf"><a href="125.html">Doing your first change</a></li>
+<li class="leaf"><a href="../commit-and-push-first-change.html">Commit and push your change</a></li>
+<li class="last leaf"><a href="127.html">Abandon your change in Gerrit</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded active-trail"><a href="../ongoing-work.html" class="active-trail">Ongoing Work</a><ul class="menu"><li class="first collapsed"><a href="../saros-for-intellij.html">Saros for IntelliJ</a></li>
+<li class="leaf"><a href="../html-gui.html">Saros HTML GUI</a></li>
+<li class="leaf"><a href="../build-server-migration.html">Build Server Migration</a></li>
+<li class="leaf active-trail"><a href="../stf-cross-ide.html" class="active-trail active">STF across IDEs</a></li>
+<li class="last collapsed"><a href="../saros-for-netbeans.html">Saros for Netbeans</a></li>
+</ul></li>
+<li class="expanded"><a href="../guidelines.html">Guidelines</a><ul class="menu"><li class="first leaf"><a href="../contribution.html">Contribution Rules</a></li>
+<li class="collapsed"><a href="../coderules.1.html" title="Coding Guidelines and Rules">Coding Conventions</a></li>
+<li class="leaf"><a href="../usability.html" title="Guidelines to ensure Usability">Usability Guidelines</a></li>
+<li class="leaf"><a href="../TicketGuidelines.html">Ticket Guidelines</a></li>
+<li class="last leaf"><a href="../ci-rules.html">Jenkins Rules</a></li>
+</ul></li>
+<li class="collapsed"><a href="../tools.html">Tools</a></li>
+<li class="expanded"><a href="../processes.html" title="Processes in Saros">Processes</a><ul class="menu"><li class="first leaf"><a href="../review.html" title="Information about the review process">Review</a></li>
+<li class="leaf"><a href="../ReleaseProcess.html" title="Our Release Process">Release</a></li>
+<li class="expanded"><a href="../testing.html" title="Information about the testing process">Testing</a><ul class="menu"><li class="first last leaf"><a href="../jenkins.html">Jenkins and Saros</a></li>
+</ul></li>
+<li class="leaf"><a href="../bugtracker.html" title="Watch the bug tracker">Bug Tracking</a></li>
+<li class="last leaf"><a href="../documentation.html" title="Information about the documentation process">Documentation</a></li>
+</ul></li>
+<li class="leaf"><a href="../mailingslists.html">Mailinglists</a></li>
+<li class="leaf"><a href="https://sourceforge.net/p/dpp/bugs/" title="">Bug Tracker</a></li>
+<li class="leaf"><a href="https://sourceforge.net/projects/dpp/" title="Visit Saros at Sourceforge">Saros@Sourceforge</a></li>
+<li class="collapsed"><a href="../gsoc.1.html">Google Summer of Code</a></li>
+<li class="last expanded"><a href="129.html">FAQ in daily practice</a><ul class="menu"><li class="first leaf"><a href="132.html" title="A change was integrated to master. How can I update my local code?">Update local code to master</a></li>
+<li class="leaf"><a href="130.html" title="I messed up my local copy of Saros. How can I reset/clean up/revert my changes?">Revert local changes</a></li>
+<li class="leaf"><a href="../upload-new-patch-set.html" title="Someone discovered an error/failure/typo. How can I upload a new patch set?">Upload a new patch set</a></li>
+<li class="leaf"><a href="133.html" title="My build failed. What&#039;s wrong with my change?">Building in Gerrit failed!</a></li>
+<li class="leaf"><a href="../gerrit-checkout-patch.html" title="Someone uploaded a change to Gerrit. How can I test this change?">Get &amp; run someones change</a></li>
+<li class="leaf"><a href="145.html" title="What is a Change? Patch set? Submit?">Change? Patch set? Submit?</a></li>
+<li class="leaf"><a href="../gerrit-groups-and-permissions.html" title="Which permissions do I have?">Check Gerrit permissions</a></li>
+<li class="leaf"><a href="142.html" title="How to delete an unwanted local branch in EGit?">Delete local branch</a></li>
+<li class="leaf"><a href="136.html">Duplicate Location Error</a></li>
+<li class="leaf"><a href="../gerrit-review.html" title="Someone wants that I review a change. How to review a change?">Review a change</a></li>
+<li class="leaf"><a href="140.html" title="How to run Saros STF tests locally?">Run STF tests locally</a></li>
+<li class="leaf"><a href="139.html" title="I ran an STF test (located in test/stf) and get an error! What&#039;s wrong?">STF tests fail</a></li>
+<li class="leaf"><a href="138.html" title="How to set up Saros for running local STF tests?">Set up STF tests</a></li>
+<li class="leaf"><a href="144.html" title="I want automate my testing process. How to write my own STF tests?">Write STF tests</a></li>
+<li class="last leaf"><a href="../git-recipes.html">Git use-cases</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="../techdoc.html" title="Technical Documentation">Technical Documentation</a><ul class="menu"><li class="first leaf"><a href="../architectureDocumentation.html">Architecture Documentation</a></li>
+<li class="leaf"><a href="../specoverview.html">Overview</a></li>
+<li class="leaf"><a href="../concurrency.html" title="Information about Concurrency">Concurrency</a></li>
+<li class="leaf"><a href="../eclipsebridge.html">Eclipse Bridge</a></li>
+<li class="leaf"><a href="../packageFeedback.html" title="Information about the feedback feature">Feedback</a></li>
+<li class="leaf"><a href="../invitation.html" title="Information about invitation">Invitation</a></li>
+<li class="leaf"><a href="../networklayer.html" title="Information about the network layer">Network Layer</a></li>
+<li class="expanded"><a href="../sharedsession.html" title="Information about shared session">Shared Session</a><ul class="menu"><li class="first last leaf"><a href="../activities.html" title="Information about activities">Activities</a></li>
+</ul></li>
+<li class="last leaf"><a href="../ui.html" title="Information about user interface">User Interface</a></li>
+</ul></li>
+<li class="expanded"><a href="../research.html" title="Research">Research</a><ul class="menu"><li class="first leaf"><a href="../bibliography.html" title="Saros related literature">Bibliography</a></li>
+<li class="last leaf"><a href="../relatedwork.html">Related Work</a></li>
+</ul></li>
+<li class="last leaf"><a href="../contact.html">Contact</a></li>
+</ul></div><!-- end main-menu -->
+</div> <!-- /#header -->
+<div id="content-body">
+<div class="breadcrumb"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="../index.html">Home</a> » <a href="../getinvolved.html" title="Learn how to develop on Saros">Develop on Saros</a> » <a href="../ongoing-work.html">Ongoing Work</a> » STF across IDEs</nav></div>
+  <section id="main" role="main" class="clear">
+        <a id="main-content"></a>
+            <h1 class="title" id="page-title">STF across IDEs</h1>                    <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                          <span property="dc:title" content="STF across IDEs" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+      
+    
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>The Saros Test Framework (STF) was originally written for Saros/E with its SWT user interface. With the advent of both Saros/I and the new HTML GUI, this framework is not longer sufficient to ensure Saros' quality. The new STF should be able to handle both Saros versions (Eclipse and IntelliJ) and their common HTML GUI.</p>
+<p>This page breaks down the things that need to be done in order to achieve that goal.</p>
+<h2>Tasks</h2>
+<ul><li><strong>Preparatory work</strong>
+<ol><li><a href="189.html#01_overview">Create an overview</a></li>
+<li><a href="../index.html#04_eval_swing">Evaluate technology to access Swing elements in IntelliJ</a></li>
+<li><a href="189.html#02_eval_html_e">Evaluate technology to access HTML elements in Eclipse</a></li>
+<li><a href="189.html#03_eval_html_i">Evaluate technology to access HTML elements in IntelliJ</a></li>
+</ol></li>
+<li><strong>Design</strong><br /><ol start="5"><li><a href="189.html#stf_project_structure">STF project structure</a></li>
+<li><a href="189.html#test_suite_organization">STF test suite organization</a></li>
+<li><a href="189.html#stf_api">STF API</a></li>
+</ol></li>
+<li><strong>Implementation</strong><br /><ol start="8"><li><a href="189.html#adapt_swt">Adapt STF/SWT to target API</a></li>
+<li><a href="189.html#implement_swing">Implement STF/Swing</a></li>
+<li><a href="189.html#implement_html">Implement STF/HTML</a></li>
+<li><a href="189.html#integrate">Integrate STF</a></li>
+</ol></li>
+<li><strong>Infrastructure</strong><br /><ol start="12"><li><a href="189.html#ci_e_tests">Setup CI for Saros/E HTML tests</a></li>
+<li><a href="189.html#ci_i_tests">Setup CI for Saros/I tests</a></li>
+<li><a href="189.html#ci_cross_tests">Setup CI for Cross-IDE tests</a></li>
+</ol></li>
+<li><strong>Enhancements</strong><br /><ol start="15"><li><a href="189.html#ci_multiple_versions">Setup CI for multiple IDE versions</a></li>
+<li><a href="189.html#ci_network_manipulation">Incorporate network manipulation features of "saros-gw"</a></li>
+<li><a href="../index.html#direct_access">Separate setup/teardown utilities from actual test logic</a></li>
+</ol></li>
+</ul><hr /><h2>Preparatory work</h2>
+<h3><a name="01_overview" id="01_overview"></a>Create an overview</h3>
+<p><strong>Depends on:</strong> no dependencies</p>
+<p><strong>Description:</strong> Parts of the existing STF implementation can be reused, others need to be rewritten, and others need to be written from scratch. Analog to Saros itself, the STF needs to be split into several parts, e.g. STF/Common, STF/SWT, STF/Swing, and STF/HTML. Starting from the current STF state, it would be helpful for the further steps to have overview of which part should end up where:</p>
+<ul><li>There are some parts that -- even with the new HTML GUI in place -- will remain specific for Eclipse, such as interacting with the editor content, menu items, and other Eclipse views like the project explorer. This part will be called <strong>STF/SWT</strong>. Its content already exists in the current STF.</li>
+<li>Analog to this first category, there will be Swing-specific logic dealing with the same elements (editors, menus, ...) only in IntelliJ. None of this logic already exists yet. This part will be called <strong>STF/Swing</strong>.</li>
+<li>Finally, the common HTML GUI of Saros needs to be interacted with. This part will be called <strong>STF/HTML</strong>.</li>
+</ul><p><strong>Currently involved:</strong> Robert Kasparson</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="04_eval_swing" id="04_eval_swing"></a>Evaluate Swing element access in IntelliJ IDEA</h3>
+<p><strong>Depends on:</strong> no dependencies</p>
+<p><strong>Description:</strong> There might be multiple ways to access Swing elements (both read and write access) that are displayed in IntelliJ. This task deals with finding a suitable one, that can later be embedded in the STF.</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="02_eval_html_e" id="02_eval_html_e"></a>Evaluate HTML element access in Eclipse</h3>
+<p><strong>Depends on:</strong> no dependencies</p>
+<p><strong>Description:</strong> There might be multiple ways to access HTML elements (both read and write access) that are displayed in an Eclipse view. This task deals with finding a suitable one, that can later be embedded in the STF.</p>
+<p>There might be a large overlap with the <a href="189.html#03_eval_html_i">next task</a>, and a common technology would be very favourable.</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="03_eval_html_i" id="03_eval_html_i"></a>Evaluate HTML element access in IntelliJ IDEA</h3>
+<p><strong>Depends on:</strong> no dependencies</p>
+<p><strong>Description:</strong> There might be multiple ways to access HTML elements (both read and write access) that are displayed in an IntelliJ view. This task deals with finding a suitable one, that can later be embedded in the STF.</p>
+<p>There might be a large overlap with the <a href="189.html#02_eval_html_e">previous task</a>, and a common technology would be very favourable.</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<hr /><h2>Design</h2>
+<h3><a name="stf_project_structure" id="stf_project_structure"></a>STF project structure</h3>
+<p><strong>Depends on:</strong> <a href="189.html#01_overview">Create an overview</a></p>
+<p><strong>Description:</strong> Currently, all of the STF (along with the STF test cases) reside inside the Saros/E project. The four STF parts postulated above (STF/Commong, STF/SWT, STF/Swing, STF/HTML) could all be part of a separate project. So could the STF test cases. We need a structure for this that avoids confusion. After a structure has been devised, it needs to be enforced on the existing STF code at that point.</p>
+<p><strong>Currently involved:</strong> Robert Kasparson</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="test_suite_organization" id="test_suite_organization"></a>STF test suite organization</h3>
+<p><strong>Depends on:</strong> <a href="189.html#01_overview">Create an overview</a></p>
+<p><strong>Description:</strong> All current STF tests run on Saros/E with the old SWT GUI only. In the process of completing the HTML GUI we will get a few more types of possible setups a test case could run in, e.g. Saros/E with the new HTML GUI and Saros/I (with the new HTML GUI). Some test cases might be indifferent to the setup they run in, others might be IDE or configuration specific. Some test case might be for E-E settings only, others for E-I settings. There needs to be a way of how the configuration "which test case should be executed in which environment" is handled. This could be inside the test cases themselves (similar to the "selectUsers()" method) or completely externalized (config file, ...).</p>
+<p><strong>Currently involved:</strong> Robert Kasparson</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="stf_api" id="stf_api"></a>STF API</h3>
+<p><strong>Depends on:</strong> <a href="189.html#01_overview">Create an overview</a></p>
+<p><strong>Description:</strong> Ideally, the utility methods offered by the STF should be the same regardless of the Saros instance that is controlled by them. Some of the current classes and methods might be too low-level and rely too much on the IDE being "Eclipse-ish".</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<hr /><h2>Implementation</h2>
+<h3><a name="adapt_swt" id="adapt_swt"></a>Adapt STF/SWT to target API</h3>
+<p><strong>Depends on:</strong> <a href="189.html#stf_api">STF API</a></p>
+<p><strong>Description:</strong> !!!</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="implement_swing" id="implement_swing"></a>Implement STF/Swing</h3>
+<p><strong>Depends on:</strong> <a href="189.html#stf_api">STF API</a>, <a href="189.html#04_eval_swing">Evaluate Swing element access in IntelliJ</a></p>
+<p><strong>Description:</strong> !!!</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="implement_html" id="implement_html"></a>Implement SWT/HTML</h3>
+<p><strong>Depends on:</strong> <a href="189.html#stf_api">STF API</a>, <a href="189.html#02_eval_html_e">Evaluate HTML element access in Eclipse</a>, <a href="189.html#03_eval_html_i">Evaluate HTML element access in Intellij</a>, (<a href="../html-gui.html">HTML GUI implementation</a>)</p>
+<p><strong>Description:</strong> !!!</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="integrate" id="integrate"></a>Integrate STF</h3>
+<p><strong>Depends on:</strong> <a href="189.html#adapt_swt">Adapt STF/SWT to target API</a>, <a href="189.html#implement_html">Implement STF/Swing</a>, <a href="189.html#implement_html">Implement STF/HTML</a></p>
+<p><strong>Description:</strong> Integrate the different parts.</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<hr /><h2>Infrastructure</h2>
+<h3><a name="ci_e_tests" id="ci_e_tests"></a>Setup CI for Saros/E HTML tests</h3>
+<p><strong>Depends on:</strong> <a href="189.html#test_suite_organization">Test suite organization</a></p>
+<p><strong>Description:</strong> Currently, Saros/E's nightly build is copied to the target machines and Saros/E is started using the SWT GUI. For running nightly STF tests on the HTML GUI as well, this needs to be amended. Eventually, the test cases should be executed on all platforms they are meant for.</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="ci_i_tests" id="ci_i_tests"></a>Setup CI for Saros/I tests</h3>
+<p><strong>Depends on:</strong> <a href="189.html#test_suite_organization">Test suite organization</a></p>
+<p><strong>Description:</strong> Currently, only Eclipse instances running Saros' nightly build are started and controlled remotely. For running nightly STF tests on Saros/I as well, this needs to be amended. Eventually, the test cases should be executed on all platforms they are meant for.</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="ci_cross_tests" id="ci_cross_tests"></a>Setup CI for Cross-IDE tests</h3>
+<p><strong>Depends on:</strong> <a href="189.html#ci_e_tests">Setup CI for Saros/E HTML tests</a>, <a href="189.html#ci_i_tests">Setup CI for Saros/I tests</a></p>
+<p><strong>Description:</strong> Depending on the test case requirements, some test sessions need to be started using an Eclipse client on the one end, and an IntelliJ client on the other. Eventually, the test cases should be executed on all platforms they are meant for.</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<hr /><h2>Enhancements</h2>
+<h3><a name="ci_multiple_versions" id="ci_multiple_versions"></a>Setup CI for multiple IDE versions</h3>
+<p><strong>Depends on:</strong> <a href="189.html#ci_cross_tests">Setup CI for Cross-IDE tests</a></p>
+<p><strong>Description:</strong> !!!</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="ci_network_manipulation" id="ci_network_manipulation"></a>Incorporate network manipulation features of "saros-gw"</h3>
+<p><strong>Depends on:</strong> <a href="189.html#ci_cross_tests">Setup CI for Cross-IDE tests</a></p>
+<p><strong>Description:</strong> !!!</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+<h3><a name="direct_access" id="direct_access"></a>Separate setup/teardown utilities from actual test logic</h3>
+<p><strong>Depends on:</strong> <a href="189.html#integrate">Integrate STF</a></p>
+<p><strong>Description:</strong> Currently, the preparation and the clean-up steps before and after each STF test case execution are performed using the same mechanism as the test case itself. This has two consequences: First, if, for example, having set a configuration flag is necessary for a test case, this test case might fail if the checkbox corresponding to this configuration is altered altough this was not part of what the test actually meant to test. Second, the test execution is slow. An improved STF would offer two ways to access Saros: One direct way, which changes the configuration flag directly (which would be used in setup and teardown methods) and one way through the GUI (which would be used only the test case which deals with said flag).</p>
+<p><strong>Currently involved:</strong> N.N.</p>
+<p><strong>Status:</strong> not started</p>
+</div></div></div>  </div>
+
+      <footer>
+                </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+  </section> <!-- /#main -->
+  
+      <aside id="sidebar-first" role="complementary" class="sidebar clearfix">
+      <div class="region region-sidebar-first">
+  <div id="block-menu-block-1" class="block block-menu-block">
+
+        <h2 >Develop on Saros</h2>
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first expanded menu-mlid-572"><a href="../checkout-and-first-steps.html">Check-Out and First Steps</a><ul class="menu"><li class="first leaf has-children menu-mlid-574"><a href="../setup-dev-environment.html">Set up development environment</a></li>
+<li class="last leaf has-children menu-mlid-592"><a href="../make-first-change.html">Making changes to Saros</a></li>
+</ul></li>
+<li class="expanded active-trail menu-mlid-916"><a href="../ongoing-work.html" class="active-trail">Ongoing Work</a><ul class="menu"><li class="first leaf has-children menu-mlid-694"><a href="../saros-for-intellij.html">Saros for IntelliJ</a></li>
+<li class="leaf menu-mlid-872"><a href="../html-gui.html">Saros HTML GUI</a></li>
+<li class="leaf menu-mlid-917"><a href="../build-server-migration.html">Build Server Migration</a></li>
+<li class="leaf active-trail active menu-mlid-936"><a href="../stf-cross-ide.html" class="active-trail active">STF across IDEs</a></li>
+<li class="last leaf has-children menu-mlid-924"><a href="../saros-for-netbeans.html">Saros for Netbeans</a></li>
+</ul></li>
+<li class="expanded menu-mlid-374"><a href="../guidelines.html">Guidelines</a><ul class="menu"><li class="first leaf menu-mlid-375"><a href="../contribution.html">Contribution Rules</a></li>
+<li class="leaf has-children menu-mlid-432"><a href="../coderules.1.html" title="Coding Guidelines and Rules">Coding Conventions</a></li>
+<li class="leaf menu-mlid-343"><a href="../usability.html" title="Guidelines to ensure Usability">Usability Guidelines</a></li>
+<li class="leaf menu-mlid-433"><a href="../TicketGuidelines.html">Ticket Guidelines</a></li>
+<li class="last leaf menu-mlid-692"><a href="../ci-rules.html">Jenkins Rules</a></li>
+</ul></li>
+<li class="expanded menu-mlid-931"><a href="../tools.html">Tools</a><ul class="menu"><li class="first leaf menu-mlid-357"><a href="../jtourbus.html" title="Get involved with JTourBus">JTourBus</a></li>
+<li class="leaf menu-mlid-932"><a href="../archnemesis.html">Archnemesis</a></li>
+<li class="leaf menu-mlid-934"><a href="../sia.html">Sia</a></li>
+<li class="last leaf menu-mlid-933"><a href="../sonarqube-gerrit-bridge.html">SonarQube-Gerrit-Bridge</a></li>
+</ul></li>
+<li class="expanded menu-mlid-341"><a href="../processes.html" title="Processes in Saros">Processes</a><ul class="menu"><li class="first leaf menu-mlid-351"><a href="../review.html" title="Information about the review process">Review</a></li>
+<li class="leaf menu-mlid-352"><a href="../ReleaseProcess.html" title="Our Release Process">Release</a></li>
+<li class="leaf has-children menu-mlid-353"><a href="../testing.html" title="Information about the testing process">Testing</a></li>
+<li class="leaf menu-mlid-356"><a href="../bugtracker.html" title="Watch the bug tracker">Bug Tracking</a></li>
+<li class="last leaf menu-mlid-354"><a href="../documentation.html" title="Information about the documentation process">Documentation</a></li>
+</ul></li>
+<li class="leaf menu-mlid-430"><a href="../mailingslists.html">Mailinglists</a></li>
+<li class="leaf menu-mlid-388"><a href="https://sourceforge.net/p/dpp/bugs/" title="">Bug Tracker</a></li>
+<li class="leaf menu-mlid-335"><a href="https://sourceforge.net/projects/dpp/" title="Visit Saros at Sourceforge">Saros@Sourceforge</a></li>
+<li class="expanded menu-mlid-915"><a href="../gsoc.1.html">Google Summer of Code</a><ul class="menu"><li class="first last leaf menu-mlid-832"><a href="../gsoc/2015/ideas.html">2015 - Ideas</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-615"><a href="129.html">FAQ in daily practice</a><ul class="menu"><li class="first leaf menu-mlid-610"><a href="132.html" title="A change was integrated to master. How can I update my local code?">Update local code to master</a></li>
+<li class="leaf menu-mlid-606"><a href="130.html" title="I messed up my local copy of Saros. How can I reset/clean up/revert my changes?">Revert local changes</a></li>
+<li class="leaf menu-mlid-614"><a href="../upload-new-patch-set.html" title="Someone discovered an error/failure/typo. How can I upload a new patch set?">Upload a new patch set</a></li>
+<li class="leaf menu-mlid-612"><a href="133.html" title="My build failed. What&#039;s wrong with my change?">Building in Gerrit failed!</a></li>
+<li class="leaf menu-mlid-608"><a href="../gerrit-checkout-patch.html" title="Someone uploaded a change to Gerrit. How can I test this change?">Get &amp; run someones change</a></li>
+<li class="leaf menu-mlid-678"><a href="145.html" title="What is a Change? Patch set? Submit?">Change? Patch set? Submit?</a></li>
+<li class="leaf menu-mlid-670"><a href="../gerrit-groups-and-permissions.html" title="Which permissions do I have?">Check Gerrit permissions</a></li>
+<li class="leaf menu-mlid-672"><a href="142.html" title="How to delete an unwanted local branch in EGit?">Delete local branch</a></li>
+<li class="leaf menu-mlid-674"><a href="136.html">Duplicate Location Error</a></li>
+<li class="leaf menu-mlid-630"><a href="../gerrit-review.html" title="Someone wants that I review a change. How to review a change?">Review a change</a></li>
+<li class="leaf menu-mlid-668"><a href="140.html" title="How to run Saros STF tests locally?">Run STF tests locally</a></li>
+<li class="leaf menu-mlid-666"><a href="139.html" title="I ran an STF test (located in test/stf) and get an error! What&#039;s wrong?">STF tests fail</a></li>
+<li class="leaf menu-mlid-664"><a href="138.html" title="How to set up Saros for running local STF tests?">Set up STF tests</a></li>
+<li class="leaf menu-mlid-676"><a href="144.html" title="I want automate my testing process. How to write my own STF tests?">Write STF tests</a></li>
+<li class="last leaf menu-mlid-874"><a href="../git-recipes.html">Git use-cases</a></li>
+</ul></li>
+</ul></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </aside>  <!-- /#sidebar-first -->
+  
+  </div> <!-- end content-body -->
+<div class="clear"></div>
+<div id="footer" class="clearfix">
+    <div class="clear"></div>
+<div class="region region-footer">
+  <div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="http://www.mi.fu-berlin.de/fb/impressum/" target="_blank">Impressum</a> — <a href="../index.html%3Fq=user.html">Internal login</a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+<div class="clear"></div>
+<div id="copyright">Copyright &copy; 2019, Saros</div>
+</div> <!-- /#footer -->
+</div> <!-- /#wrapper -->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+<!--//--><![CDATA[// ><!--
+jQuery(document).ready( function($) { 
+	$( ".known-issue-box" ).accordion({ 
+		active: false, 
+		heightStyle: "content", 
+		collapsible: true 
+	}); 
+	$( ".known-issue-box" ).css( "visibility", "visible" ); });
+//--><!]]>
+</script>  </body>
+
+</html>

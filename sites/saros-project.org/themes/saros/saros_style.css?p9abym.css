@@ -1,0 +1,225 @@
+body{
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 150%;
+}
+
+/* problem? */
+
+#main .content p {
+    line-height: 150%;
+}
+
+#header-top #logo{
+float: left;
+width: 600px;
+margin-top: 10px;
+}
+
+#header-top #logo #site_name_link{
+float: left;
+}
+
+#header-top #site-slogan {
+  margin: 0;
+  color: #636363;
+  text-shadow: 1px 1px #fff;
+}
+
+#header-top #logo #site-name{
+  font-weight: bold;
+  color: #323232;
+  margin-top: 0.4em;
+  font-size: 5em;
+
+}
+
+#header-top #logo #name_slogan {
+  padding-left: 120px;
+  margin-top: 45px;
+}
+
+code {
+  background: none;
+  text-shadow: none;
+  border: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  
+}
+
+.breadcrumb {
+font-size: 12px;
+}
+
+#main li {
+  padding: 3px 0;
+}
+
+ul.menu a:hover,
+ul.menu a.active,
+ul.menu a.active-trail { 
+  text-decoration: underline !important;
+}
+
+
+#sidebar-first .menu a.active, 
+#sidebar-second .menu a.active { 
+  color: #000;  
+}
+
+#sidebar-first li, #sidebar-second li{
+background: url(images/sidebar-arrow.png.html) no-repeat;
+background-position: 0 6px;
+
+}
+
+#sidebar-first .menu li.expanded, #sidebar-second .menu li.expanded{
+border-bottom: none;
+}
+
+a, a:link {
+    color: #003399;
+}
+
+#main a, #main a:link {
+    text-decoration: underline;
+}
+
+#main h1 a, #main h1 a:link,
+#main h2 a, #main h2 a:link, 
+#main h3 a, #main h3 a:link,
+#main h4 a, #main h4 a:link,
+#main h5 a, #main h5 a:link,
+#main h6 a, #main h6 a:link {
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: #0099CC;
+  outline: none;
+  text-decoration: none;
+}
+
+#main-menu {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif; 
+    text-transform: none;
+}
+
+#main-menu ul a:hover,
+#main-menu ul a.active,
+#main-menu ul li.active-trail a {
+    color: #FACC2E;
+}
+
+#main-menu ul a:link,
+#main-menu ul a:visited,
+#main-menu ul ul a:link,
+#main-menu ul ul a:visited {
+    color: #F4F4F4;
+    text-decoration: none;
+}
+
+/* 
+ * Used to attach users attention. Place warnings or unexpected behavior that
+ * need to be mentioned by the user.
+ */
+.yellowbox {
+  background-color: gold;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.mediaobject {
+  margin-bottom: 1em;
+}
+
+/* 
+ * Makes buttons that look like Windows buttons. This makes it easier for users
+ * to scan and recognize buttons on the page.
+ */
+span.guibutton {
+  min-width: 80px;
+  padding: 0 10px;
+  text-align: center;
+  border-bottom: 2px solid dimgrey;
+  border-right: 2px solid dimgrey;
+  border-top: 2px solid #bbb;
+  border-left: 2px solid #bbb;
+
+  background-color: lightgrey;
+  display: inline-block;
+  font-weight: normal;
+  font-family: Arial, sans;
+  font-size: 90%;
+  line-height: 1.4em;
+  color: #222;
+}
+
+/* 
+ * For styling the pager at the end of some sites (make them look like book sites)
+ * THIS SHOULD BE UNCOMMENTED IF WE CAN'T REALIZE AUTOMATIC PAGERS AND ADD THEM
+ * MANUALLY!
+   
+.left-pagers, .right-pagers { 
+  width: 49%; display: inline-block; 
+}
+.left-pagers { 
+  text-align: left; 
+}
+.right-pagers { 
+  text-align: right; 
+}
+.left-pagers a:before { 
+  /* works well for most browsers */
+  content: "\00AB  "; 
+}
+.right-pagers a:after { 
+  content: "  \00BB"; 
+}
+*/
+
+/*
+ * Improve scanability for menus and menu items
+ */
+.guimenu, .guimenuitem {
+  font-weight: bold;
+}
+/*
+ * Makes a "note" container used by DocBook for displaying notes.
+ */
+.note {
+  border: 2px solid rgb(112, 153, 197);
+  background-color: rgb(240, 240, 255);
+  padding: 1em 6px;
+  margin-bottom: 1em;
+}
+
+.note ul, .note ol {
+  margin: 0;
+}
+
+p, .title {
+  padding-bottom: 0.5em;
+}
+
+/*
+ * Fixes missing seperator in last items submenu 
+ */
+#main-menu ul ul ul li.last a {
+  border-bottom: 1px solid rgb(88, 88, 88) !important;
+}
+
+/*
+ * For Know Issue boxes
+ */
+.known-issue-box p, .known-issue-box div, #main .content .known-issue-box h4 { margin: 0; }
+.ui-accordion-header {background: none; }
+.ui-accordion-header {background-color: gold; }
+#main .content .known-issue-box h4 { margin-top: 1em; } 

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+<link rel="next" href="sessionManagement.html" />
+<link rel="shortcut icon" href="sites/saros-project.org/themes/saros/favicon.ico.html" type="image/vnd.microsoft.icon" />
+<link rel="up" href="architectureDocumentation.html" />
+<link rel="shortlink" href="node/147.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="componentsRunningSession.html" />
+<link rel="prev" href="architectureDocumentation.html" />
+  <title>Components in a Running Session | Saros</title>
+  <style type="text/css" media="all">
+@import url("modules/system/system.base.css%3Fp9abym.css");
+@import url("modules/system/system.menus.css%3Fp9abym.css");
+@import url("modules/system/system.messages.css%3Fp9abym.css");
+@import url("modules/system/system.theme.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("sites/all/modules/ldap/ldap_user/ldap_user.css%3Fp9abym.css");
+@import url("modules/book/book.css%3Fp9abym.css");
+@import url("modules/comment/comment.css%3Fp9abym.css");
+@import url("modules/field/theme/field.css%3Fp9abym.css");
+@import url("modules/node/node.css%3Fp9abym.css");
+@import url("modules/search/search.css%3Fp9abym.css");
+@import url("sites/all/modules/toc_filter/toc_filter.css%3Fp9abym.css");
+@import url("modules/user/user.css%3Fp9abym.css");
+@import url("modules/forum/forum.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("sites/all/modules/ctools/css/ctools.css%3Fp9abym.css");
+@import url("sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css%3Fp9abym.css");
+</style>
+<style type="text/css" media="all">
+@import url("sites/saros-project.org/themes/touch/style.css%3Fp9abym.css");
+@import url("sites/saros-project.org/themes/saros/saros_style.css%3Fp9abym.css");
+</style>
+  <script type="text/javascript" src="misc/jquery.js%3Fv=1.4.4.html"></script>
+<script type="text/javascript" src="misc/jquery.once.js%3Fv=1.2.html"></script>
+<script type="text/javascript" src="misc/drupal.js%3Fp9abym.html"></script>
+<script type="text/javascript" src="sites/all/modules/toc_filter/toc_filter.js%3Fp9abym.html"></script>
+<script type="text/javascript" src="sites/saros-project.org/themes/touch/js/scrolltopcontrol.js%3Fp9abym.html"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saros","theme_token":"8nwYX4oeX2_tSW_jSi3Ywc2U1khLhSYCQ_WCHLzfUNA","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/toc_filter\/toc_filter.js":1,"sites\/saros-project.org\/themes\/touch\/js\/scrolltopcontrol.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/ldap\/ldap_user\/ldap_user.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/toc_filter\/toc_filter.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/saros-project.org\/themes\/touch\/style.css":1,"sites\/saros-project.org\/themes\/saros\/saros_style.css":1}},"toc_filter_smooth_scroll_duration":"","urlIsAjaxTrusted":{"\/componentsRunningSession":true}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-147 node-type-book" >
+    <div id="wrapper" class="clearfix">
+<div id="header-top" class="clearfix">
+
+<div id="logo"><!--start logo-->
+      <a id="site_name_link" href="index.html" title="Home">
+      <img src="sites/saros-project.org/files/saros-logo-100x100.png.html" alt="Home" />
+    </a>
+    
+  <div id="name_slogan">
+          <a id="site-name" href="index.html" title="Home" rel="home"><span>Saros</span></a>
+      
+          <br/>
+      <a id="site-slogan" id="site-name" href="index.html" title="Home" rel="home"><span>Distributed Party Programming</span></a>
+      
+  </div><!--end name_slogan-->
+  
+
+<!--div id="site-slogan">Distributed Party Programming</div><!--site slogan-->
+</div><!--end logo-->
+
+
+
+
+ <!-- / start search box region -->
+    <div class="search-box">
+      <div class="region region-search-box">
+  <div id="block-search-form" class="block block-search">
+
+      
+  <div class="content">
+    <form action="componentsRunningSession.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-U87BUX5gWI7GIhcbyxWALUJCKJ8wK9rSpy07lG-X2oI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </div> <!-- / end search box region -->
+  </div><!--end header-top-->
+<div id="header" class="clearfix"><!--start header--> 
+    <div id="main-menu">
+    <ul class="menu"><li class="first leaf"><a href="home.html" title="Frontpage">Home</a></li>
+<li class="expanded"><a href="node/66.html">About Saros</a><ul class="menu"><li class="first leaf"><a href="features.html" title="List of Saros features">Features</a></li>
+<li class="leaf"><a href="screenshots.html" title="Get impressions with screenshots">Screenshots</a></li>
+<li class="leaf"><a href="host-comic.html">Saros Host Comic</a></li>
+<li class="leaf"><a href="what-others-say.html" title="Information about where Saros has been mentioned">What others say</a></li>
+<li class="last leaf"><a href="history.html" title="Development history and people involved">History</a></li>
+</ul></li>
+<li class="expanded"><a href="setup.html" title="Learn how to use Saros">Installation &amp; Set-Up</a><ul class="menu"><li class="first expanded"><a href="installation.html" title="Installing Saros in Eclipse">Install Saros</a><ul class="menu"><li class="first last leaf"><a href="setupXMPP.html" title="Setup your own XMPP Server (Advanced Users)">Setup own XMPP Server</a></li>
+</ul></li>
+<li class="last leaf"><a href="GettingStarted.html">Getting Started with Saros</a></li>
+</ul></li>
+<li class="expanded"><a href="support_home.html">Support</a><ul class="menu"><li class="first leaf"><a href="mailing-list-chat.html" title="Information on how to reach the Saros team via mailing lists">Mailing Lists</a></li>
+<li class="leaf"><a href="troubleshooting.html" title="Known problems when using Saros">Troubleshooting</a></li>
+<li class="leaf"><a href="faq.html" title="Frequently asked questions">Saros FAQ</a></li>
+<li class="leaf"><a href="compatibility.html">Plugin Compatibility</a></li>
+<li class="last leaf"><a href="feedback.html" title="Information about the feature feedback">User Survey &amp; Statistics</a></li>
+</ul></li>
+<li class="expanded"><a href="getinvolved.html" title="Learn how to develop on Saros">Develop on Saros</a><ul class="menu"><li class="first expanded"><a href="checkout-and-first-steps.html">Check-Out and First Steps</a><ul class="menu"><li class="first expanded"><a href="setup-dev-environment.html">Set up development environment</a><ul class="menu"><li class="first leaf"><a href="dev-environment-reqs.html">Environment Requirements</a></li>
+<li class="leaf"><a href="install-subclipse.html">Install Subclipse for building Saros/E</a></li>
+<li class="leaf"><a href="install-egit.html">Install EGit</a></li>
+<li class="leaf"><a href="our-dev-workflow.html">Our workflow</a></li>
+<li class="leaf"><a href="gerrit-login.html">Log in to Gerrit</a></li>
+<li class="leaf"><a href="eclipse-setup-git.html">Setting your name and email address for using Gerrit</a></li>
+<li class="leaf"><a href="eclipse-setup-ssh.html">Create and configure an SSH key for using Gerrit</a></li>
+<li class="leaf"><a href="get-source-code.html">Get Saros source code</a></li>
+<li class="leaf"><a href="import-code-style-profiles.html">Import code style profiles</a></li>
+<li class="last leaf"><a href="run-saros-as-dev.html">Run your Saros</a></li>
+</ul></li>
+<li class="last expanded"><a href="make-first-change.html">Making changes to Saros</a><ul class="menu"><li class="first leaf"><a href="node/124.html">Create a new local branch</a></li>
+<li class="leaf"><a href="node/125.html">Doing your first change</a></li>
+<li class="leaf"><a href="commit-and-push-first-change.html">Commit and push your change</a></li>
+<li class="last leaf"><a href="node/127.html">Abandon your change in Gerrit</a></li>
+</ul></li>
+</ul></li>
+<li class="collapsed"><a href="ongoing-work.html">Ongoing Work</a></li>
+<li class="expanded"><a href="guidelines.html">Guidelines</a><ul class="menu"><li class="first leaf"><a href="contribution.html">Contribution Rules</a></li>
+<li class="collapsed"><a href="coderules.1.html" title="Coding Guidelines and Rules">Coding Conventions</a></li>
+<li class="leaf"><a href="usability.html" title="Guidelines to ensure Usability">Usability Guidelines</a></li>
+<li class="leaf"><a href="TicketGuidelines.html">Ticket Guidelines</a></li>
+<li class="last leaf"><a href="ci-rules.html">Jenkins Rules</a></li>
+</ul></li>
+<li class="collapsed"><a href="tools.html">Tools</a></li>
+<li class="expanded"><a href="processes.html" title="Processes in Saros">Processes</a><ul class="menu"><li class="first leaf"><a href="review.html" title="Information about the review process">Review</a></li>
+<li class="leaf"><a href="ReleaseProcess.html" title="Our Release Process">Release</a></li>
+<li class="expanded"><a href="testing.html" title="Information about the testing process">Testing</a><ul class="menu"><li class="first last leaf"><a href="jenkins.html">Jenkins and Saros</a></li>
+</ul></li>
+<li class="leaf"><a href="bugtracker.html" title="Watch the bug tracker">Bug Tracking</a></li>
+<li class="last leaf"><a href="documentation.html" title="Information about the documentation process">Documentation</a></li>
+</ul></li>
+<li class="leaf"><a href="mailingslists.html">Mailinglists</a></li>
+<li class="leaf"><a href="https://sourceforge.net/p/dpp/bugs/" title="">Bug Tracker</a></li>
+<li class="leaf"><a href="https://sourceforge.net/projects/dpp/" title="Visit Saros at Sourceforge">Saros@Sourceforge</a></li>
+<li class="collapsed"><a href="gsoc.1.html">Google Summer of Code</a></li>
+<li class="last expanded"><a href="node/129.html">FAQ in daily practice</a><ul class="menu"><li class="first leaf"><a href="node/132.html" title="A change was integrated to master. How can I update my local code?">Update local code to master</a></li>
+<li class="leaf"><a href="node/130.html" title="I messed up my local copy of Saros. How can I reset/clean up/revert my changes?">Revert local changes</a></li>
+<li class="leaf"><a href="upload-new-patch-set.html" title="Someone discovered an error/failure/typo. How can I upload a new patch set?">Upload a new patch set</a></li>
+<li class="leaf"><a href="node/133.html" title="My build failed. What&#039;s wrong with my change?">Building in Gerrit failed!</a></li>
+<li class="leaf"><a href="gerrit-checkout-patch.html" title="Someone uploaded a change to Gerrit. How can I test this change?">Get &amp; run someones change</a></li>
+<li class="leaf"><a href="node/145.html" title="What is a Change? Patch set? Submit?">Change? Patch set? Submit?</a></li>
+<li class="leaf"><a href="gerrit-groups-and-permissions.html" title="Which permissions do I have?">Check Gerrit permissions</a></li>
+<li class="leaf"><a href="node/142.html" title="How to delete an unwanted local branch in EGit?">Delete local branch</a></li>
+<li class="leaf"><a href="node/136.html">Duplicate Location Error</a></li>
+<li class="leaf"><a href="gerrit-review.html" title="Someone wants that I review a change. How to review a change?">Review a change</a></li>
+<li class="leaf"><a href="node/140.html" title="How to run Saros STF tests locally?">Run STF tests locally</a></li>
+<li class="leaf"><a href="node/139.html" title="I ran an STF test (located in test/stf) and get an error! What&#039;s wrong?">STF tests fail</a></li>
+<li class="leaf"><a href="node/138.html" title="How to set up Saros for running local STF tests?">Set up STF tests</a></li>
+<li class="leaf"><a href="node/144.html" title="I want automate my testing process. How to write my own STF tests?">Write STF tests</a></li>
+<li class="last leaf"><a href="git-recipes.html">Git use-cases</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="techdoc.html" title="Technical Documentation">Technical Documentation</a><ul class="menu"><li class="first leaf"><a href="architectureDocumentation.html">Architecture Documentation</a></li>
+<li class="leaf"><a href="specoverview.html">Overview</a></li>
+<li class="leaf"><a href="concurrency.html" title="Information about Concurrency">Concurrency</a></li>
+<li class="leaf"><a href="eclipsebridge.html">Eclipse Bridge</a></li>
+<li class="leaf"><a href="packageFeedback.html" title="Information about the feedback feature">Feedback</a></li>
+<li class="leaf"><a href="invitation.html" title="Information about invitation">Invitation</a></li>
+<li class="leaf"><a href="networklayer.html" title="Information about the network layer">Network Layer</a></li>
+<li class="expanded"><a href="sharedsession.html" title="Information about shared session">Shared Session</a><ul class="menu"><li class="first last leaf"><a href="activities.html" title="Information about activities">Activities</a></li>
+</ul></li>
+<li class="last leaf"><a href="ui.html" title="Information about user interface">User Interface</a></li>
+</ul></li>
+<li class="expanded"><a href="research.html" title="Research">Research</a><ul class="menu"><li class="first leaf"><a href="bibliography.html" title="Saros related literature">Bibliography</a></li>
+<li class="last leaf"><a href="relatedwork.html">Related Work</a></li>
+</ul></li>
+<li class="last leaf"><a href="contact.html">Contact</a></li>
+</ul></div><!-- end main-menu -->
+</div> <!-- /#header -->
+<div id="content-body">
+<div class="breadcrumb"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="index.html">Home</a> » <a href="architectureDocumentation.html">Architecture Documentation</a> » Components in a Running Session</nav></div>
+  <section id="main" role="main" class="clear">
+        <a id="main-content"></a>
+            <h1 class="title" id="page-title">Components in a Running Session</h1>                    <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                          <span property="dc:title" content="Components in a Running Session" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+      
+    
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Saros is composed of a number of functional components. The following figure shows the most important components at working during a running Session.</p>
+<p><span><img alt="" src="sites/saros-project.org/files/architecture_ComponentsSession.svg.html" style="width: 500px; height: 362px;" /></span></p>
+<hr /><ul><li><strong>User Interface</strong>
+<p>This component is responsible for managing all the visual elements in Saros, listening to changes in Eclipse, and reacting to actions performed by the local user.</p>
+</li>
+<li><strong>Session Management</strong>
+<p>This component is responsible for managing a <em>Shared Session</em> and keeping the shared projects in a consistent state across the local copies of all participants. It functions as the core component in a running session and directs communication between all other components.</p>
+<p>In general this component takes input from the <em>User Interface</em>, transforms and directs it and afterwards passes the result to the <em>Network Layer</em>. See <a href="sessionManagement.html">Session Management</a> for a more detailed view at this component and <a href="activitySending.html">Activity Sending</a>. The main entrance-point of this component is the <a href="http://saros-build.imp.fu-berlin.de/sarosDoc/interfacede_1_1fu__berlin_1_1inf_1_1dpp_1_1project_1_1_i_saros_session.html"> <em>ISarosSession</em></a>-Interface.</p>
+</li>
+<li><strong>Network Layer</strong>
+<p>The <em>Network Layer</em> is responsible for communicating with other participants by sending and receiving Activities. The main entrance-points of this component are the Interfaces <a href="http://saros-build.imp.fu-berlin.de/sarosDoc/interfacede_1_1fu__berlin_1_1inf_1_1dpp_1_1net_1_1_i_transmitter.html"> <em>ITransmitter</em></a> for sending messages and the <a href="http://saros-build.imp.fu-berlin.de/sarosDoc/interfacede_1_1fu__berlin_1_1inf_1_1dpp_1_1net_1_1_i_receiver.html"> <em>IReceiver</em></a> for receiving them.</p>
+</li>
+</ul></div></div></div>  <div id="book-navigation-146" class="book-navigation">
+    <ul class="menu"><li class="first leaf"><a href="sessionManagement.html">Session Management</a></li>
+<li class="last leaf"><a href="activitySending.html">Activity Sending</a></li>
+</ul>
+        <div class="page-links clearfix">
+              <a href="architectureDocumentation.html" class="page-previous" title="Go to previous page">‹ Architecture Documentation</a>
+                    <a href="architectureDocumentation.html" class="page-up" title="Go to parent page">up</a>
+                    <a href="sessionManagement.html" class="page-next" title="Go to next page">Session Management ›</a>
+          </div>
+    
+  </div>
+  </div>
+
+      <footer>
+                </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+  </section> <!-- /#main -->
+  
+  
+  </div> <!-- end content-body -->
+<div class="clear"></div>
+<div id="footer" class="clearfix">
+    <div class="clear"></div>
+<div class="region region-footer">
+  <div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="http://www.mi.fu-berlin.de/fb/impressum/" target="_blank">Impressum</a> — <a href="index.html%3Fq=user.html">Internal login</a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+<div class="clear"></div>
+<div id="copyright">Copyright &copy; 2019, Saros</div>
+</div> <!-- /#footer -->
+</div> <!-- /#wrapper -->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+<!--//--><![CDATA[// ><!--
+jQuery(document).ready( function($) { 
+	$( ".known-issue-box" ).accordion({ 
+		active: false, 
+		heightStyle: "content", 
+		collapsible: true 
+	}); 
+	$( ".known-issue-box" ).css( "visibility", "visible" ); });
+//--><!]]>
+</script>  </body>
+
+</html>

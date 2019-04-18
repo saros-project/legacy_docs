@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="http://www.saros-project.org/sites/saros-project.org/themes/saros/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="http://www.saros-project.org/node/170" />
+<link rel="canonical" href="gsoc.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Google Summer of Code | Saros</title>
+  <style type="text/css" media="all">
+@import url("http://www.saros-project.org/modules/system/system.base.css?p9abym");
+@import url("http://www.saros-project.org/modules/system/system.menus.css?p9abym");
+@import url("http://www.saros-project.org/modules/system/system.messages.css?p9abym");
+@import url("http://www.saros-project.org/modules/system/system.theme.css?p9abym");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.saros-project.org/sites/all/modules/ldap/ldap_user/ldap_user.css?p9abym");
+@import url("http://www.saros-project.org/modules/book/book.css?p9abym");
+@import url("http://www.saros-project.org/modules/comment/comment.css?p9abym");
+@import url("http://www.saros-project.org/modules/field/theme/field.css?p9abym");
+@import url("http://www.saros-project.org/modules/node/node.css?p9abym");
+@import url("http://www.saros-project.org/modules/search/search.css?p9abym");
+@import url("http://www.saros-project.org/sites/all/modules/toc_filter/toc_filter.css?p9abym");
+@import url("http://www.saros-project.org/modules/user/user.css?p9abym");
+@import url("http://www.saros-project.org/modules/forum/forum.css?p9abym");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.saros-project.org/sites/all/modules/ctools/css/ctools.css?p9abym");
+@import url("http://www.saros-project.org/sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css?p9abym");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.saros-project.org/sites/saros-project.org/themes/touch/style.css?p9abym");
+@import url("http://www.saros-project.org/sites/saros-project.org/themes/saros/saros_style.css?p9abym");
+</style>
+  <script type="text/javascript" src="misc/jquery.js%3Fv=1.4.4"></script>
+<script type="text/javascript" src="misc/jquery.once.js%3Fv=1.2"></script>
+<script type="text/javascript" src="misc/drupal.js%3Fp9abym"></script>
+<script type="text/javascript" src="sites/all/modules/toc_filter/toc_filter.js%3Fp9abym"></script>
+<script type="text/javascript" src="sites/saros-project.org/themes/touch/js/scrolltopcontrol.js%3Fp9abym"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saros","theme_token":"1ci4AKYwzgn9AUrYx44ICbC9k4iNxp7up-d23HR4pNs","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/toc_filter\/toc_filter.js":1,"sites\/saros-project.org\/themes\/touch\/js\/scrolltopcontrol.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/ldap\/ldap_user\/ldap_user.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/toc_filter\/toc_filter.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/saros-project.org\/themes\/touch\/style.css":1,"sites\/saros-project.org\/themes\/saros\/saros_style.css":1}},"toc_filter_smooth_scroll_duration":"","urlIsAjaxTrusted":{"\/gsoc":true}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-170 node-type-page" >
+    <div id="wrapper" class="clearfix">
+<div id="header-top" class="clearfix">
+
+<div id="logo"><!--start logo-->
+      <a id="site_name_link" href="http://www.saros-project.org/" title="Home">
+      <img src="sites/saros-project.org/files/saros-logo-100x100.png" alt="Home" />
+    </a>
+    
+  <div id="name_slogan">
+          <a id="site-name" href="http://www.saros-project.org/" title="Home" rel="home"><span>Saros</span></a>
+      
+          <br/>
+      <a id="site-slogan" id="site-name" href="http://www.saros-project.org/" title="Home" rel="home"><span>Distributed Party Programming</span></a>
+      
+  </div><!--end name_slogan-->
+  
+
+<!--div id="site-slogan">Distributed Party Programming</div><!--site slogan-->
+</div><!--end logo-->
+
+
+
+
+ <!-- / start search box region -->
+    <div class="search-box">
+      <div class="region region-search-box">
+  <div id="block-search-form" class="block block-search">
+
+      
+  <div class="content">
+    <form action="gsoc.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-8Wjas2DZKC6pXEb1isKwE_JmmdYpyEuVaobKC2-UhRg" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </div> <!-- / end search box region -->
+  </div><!--end header-top-->
+<div id="header" class="clearfix"><!--start header--> 
+    <div id="main-menu">
+    <ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/home" title="Frontpage">Home</a></li>
+<li class="expanded"><a href="http://www.saros-project.org/node/66">About Saros</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/features" title="List of Saros features">Features</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/screenshots" title="Get impressions with screenshots">Screenshots</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/host-comic">Saros Host Comic</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/what-others-say" title="Information about where Saros has been mentioned">What others say</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/history" title="Development history and people involved">History</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.saros-project.org/setup" title="Learn how to use Saros">Installation &amp; Set-Up</a><ul class="menu"><li class="first expanded"><a href="http://www.saros-project.org/installation" title="Installing Saros in Eclipse">Install Saros</a><ul class="menu"><li class="first last leaf"><a href="http://www.saros-project.org/setupXMPP" title="Setup your own XMPP Server (Advanced Users)">Setup own XMPP Server</a></li>
+</ul></li>
+<li class="last leaf"><a href="http://www.saros-project.org/GettingStarted">Getting Started with Saros</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.saros-project.org/support_home">Support</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/mailing-list-chat" title="Information on how to reach the Saros team via mailing lists">Mailing Lists</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/troubleshooting" title="Known problems when using Saros">Troubleshooting</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/faq" title="Frequently asked questions">Saros FAQ</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/compatibility">Plugin Compatibility</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/feedback" title="Information about the feature feedback">User Survey &amp; Statistics</a></li>
+</ul></li>
+<li class="expanded active-trail"><a href="http://www.saros-project.org/getinvolved" title="Learn how to develop on Saros" class="active-trail">Develop on Saros</a><ul class="menu"><li class="first expanded"><a href="http://www.saros-project.org/checkout-and-first-steps">Check-Out and First Steps</a><ul class="menu"><li class="first expanded"><a href="http://www.saros-project.org/setup-dev-environment">Set up development environment</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/dev-environment-reqs">Environment Requirements</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/install-subclipse">Install Subclipse for building Saros/E</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/install-egit">Install EGit</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/our-dev-workflow">Our workflow</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/gerrit-login">Log in to Gerrit</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/eclipse-setup-git">Setting your name and email address for using Gerrit</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/eclipse-setup-ssh">Create and configure an SSH key for using Gerrit</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/get-source-code">Get Saros source code</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/import-code-style-profiles">Import code style profiles</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/run-saros-as-dev">Run your Saros</a></li>
+</ul></li>
+<li class="last expanded"><a href="http://www.saros-project.org/make-first-change">Making changes to Saros</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/node/124">Create a new local branch</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/125">Doing your first change</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/commit-and-push-first-change">Commit and push your change</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/node/127">Abandon your change in Gerrit</a></li>
+</ul></li>
+</ul></li>
+<li class="collapsed"><a href="http://www.saros-project.org/ongoing-work">Ongoing Work</a></li>
+<li class="expanded"><a href="http://www.saros-project.org/guidelines">Guidelines</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/contribution">Contribution Rules</a></li>
+<li class="collapsed"><a href="coderules.html" title="Coding Guidelines and Rules">Coding Conventions</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/usability" title="Guidelines to ensure Usability">Usability Guidelines</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/TicketGuidelines">Ticket Guidelines</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/ci-rules">Jenkins Rules</a></li>
+</ul></li>
+<li class="collapsed"><a href="http://www.saros-project.org/tools">Tools</a></li>
+<li class="expanded"><a href="http://www.saros-project.org/processes" title="Processes in Saros">Processes</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/review" title="Information about the review process">Review</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/ReleaseProcess" title="Our Release Process">Release</a></li>
+<li class="expanded"><a href="http://www.saros-project.org/testing" title="Information about the testing process">Testing</a><ul class="menu"><li class="first last leaf"><a href="http://www.saros-project.org/jenkins">Jenkins and Saros</a></li>
+</ul></li>
+<li class="leaf"><a href="http://www.saros-project.org/bugtracker" title="Watch the bug tracker">Bug Tracking</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/documentation" title="Information about the documentation process">Documentation</a></li>
+</ul></li>
+<li class="leaf"><a href="http://www.saros-project.org/mailingslists">Mailinglists</a></li>
+<li class="leaf"><a href="https://sourceforge.net/p/dpp/bugs/" title="">Bug Tracker</a></li>
+<li class="leaf"><a href="https://sourceforge.net/projects/dpp/" title="Visit Saros at Sourceforge">Saros@Sourceforge</a></li>
+<li class="expanded active-trail"><a href="gsoc.html" class="active-trail active">Google Summer of Code</a><ul class="menu"><li class="first last leaf"><a href="http://www.saros-project.org/gsoc/2015/ideas">2015 - Ideas</a></li>
+</ul></li>
+<li class="last expanded"><a href="http://www.saros-project.org/node/129">FAQ in daily practice</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/node/132" title="A change was integrated to master. How can I update my local code?">Update local code to master</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/130" title="I messed up my local copy of Saros. How can I reset/clean up/revert my changes?">Revert local changes</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/upload-new-patch-set" title="Someone discovered an error/failure/typo. How can I upload a new patch set?">Upload a new patch set</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/133" title="My build failed. What&#039;s wrong with my change?">Building in Gerrit failed!</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/gerrit-checkout-patch" title="Someone uploaded a change to Gerrit. How can I test this change?">Get &amp; run someones change</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/145" title="What is a Change? Patch set? Submit?">Change? Patch set? Submit?</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/gerrit-groups-and-permissions" title="Which permissions do I have?">Check Gerrit permissions</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/142" title="How to delete an unwanted local branch in EGit?">Delete local branch</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/136">Duplicate Location Error</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/gerrit-review" title="Someone wants that I review a change. How to review a change?">Review a change</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/140" title="How to run Saros STF tests locally?">Run STF tests locally</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/139" title="I ran an STF test (located in test/stf) and get an error! What&#039;s wrong?">STF tests fail</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/138" title="How to set up Saros for running local STF tests?">Set up STF tests</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/node/144" title="I want automate my testing process. How to write my own STF tests?">Write STF tests</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/git-recipes">Git use-cases</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="http://www.saros-project.org/techdoc" title="Technical Documentation">Technical Documentation</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/architectureDocumentation">Architecture Documentation</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/specoverview">Overview</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/concurrency" title="Information about Concurrency">Concurrency</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/eclipsebridge">Eclipse Bridge</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/packageFeedback" title="Information about the feedback feature">Feedback</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/invitation" title="Information about invitation">Invitation</a></li>
+<li class="leaf"><a href="http://www.saros-project.org/networklayer" title="Information about the network layer">Network Layer</a></li>
+<li class="expanded"><a href="http://www.saros-project.org/sharedsession" title="Information about shared session">Shared Session</a><ul class="menu"><li class="first last leaf"><a href="http://www.saros-project.org/activities" title="Information about activities">Activities</a></li>
+</ul></li>
+<li class="last leaf"><a href="http://www.saros-project.org/ui" title="Information about user interface">User Interface</a></li>
+</ul></li>
+<li class="expanded"><a href="http://www.saros-project.org/research" title="Research">Research</a><ul class="menu"><li class="first leaf"><a href="http://www.saros-project.org/bibliography" title="Saros related literature">Bibliography</a></li>
+<li class="last leaf"><a href="http://www.saros-project.org/relatedwork">Related Work</a></li>
+</ul></li>
+<li class="last leaf"><a href="http://www.saros-project.org/contact">Contact</a></li>
+</ul></div><!-- end main-menu -->
+</div> <!-- /#header -->
+<div id="content-body">
+<div class="breadcrumb"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="http://www.saros-project.org/">Home</a> » <a href="http://www.saros-project.org/getinvolved" title="Learn how to develop on Saros">Develop on Saros</a> » Google Summer of Code</nav></div>
+  <section id="main" role="main" class="clear">
+        <a id="main-content"></a>
+            <h1 class="title" id="page-title">Google Summer of Code</h1>                    <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                          <span property="dc:title" content="Google Summer of Code" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+      
+    
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h3>Former years</h3>
+<p>Saros was one of 137 mentoring organizations of the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2015">Google Summer of Code 2015</a> (see <a href="http://www.saros-project.org/gsoc/2015/ideas">our archived page</a>).</p>
+<h3>Current year and future</h3>
+<p>Unfortunately, for a lack of mentoring capacity we won't apply in 2016. Please see the <a href="https://g.co/gsoc">official GSoC page</a> for further information and -- starting from 2016-02-29 -- all the other cool open-source projects you can participate in.</p>
+<p>We hope this situation will change in the future, and we're looking forward to GSoC 2017.</p>
+<h3>Contribute</h3>
+<p>If you want to contribute to Saros anyway, feel free to dive in our <a href="http://www.saros-project.org/getinvolved">introduction</a> and <a href="http://www.saros-project.org/contact/Website&#32;feedback">get in contact with us</a>.</p>
+</div></div></div>  </div>
+
+      <footer>
+                </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+  </section> <!-- /#main -->
+  
+      <aside id="sidebar-first" role="complementary" class="sidebar clearfix">
+      <div class="region region-sidebar-first">
+  <div id="block-menu-block-1" class="block block-menu-block">
+
+        <h2 >Develop on Saros</h2>
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first expanded menu-mlid-572"><a href="http://www.saros-project.org/checkout-and-first-steps">Check-Out and First Steps</a><ul class="menu"><li class="first leaf has-children menu-mlid-574"><a href="http://www.saros-project.org/setup-dev-environment">Set up development environment</a></li>
+<li class="last leaf has-children menu-mlid-592"><a href="http://www.saros-project.org/make-first-change">Making changes to Saros</a></li>
+</ul></li>
+<li class="expanded menu-mlid-916"><a href="http://www.saros-project.org/ongoing-work">Ongoing Work</a><ul class="menu"><li class="first leaf has-children menu-mlid-694"><a href="http://www.saros-project.org/saros-for-intellij">Saros for IntelliJ</a></li>
+<li class="leaf menu-mlid-872"><a href="http://www.saros-project.org/html-gui">Saros HTML GUI</a></li>
+<li class="leaf menu-mlid-917"><a href="http://www.saros-project.org/build-server-migration">Build Server Migration</a></li>
+<li class="leaf menu-mlid-936"><a href="http://www.saros-project.org/stf-cross-ide">STF across IDEs</a></li>
+<li class="last leaf has-children menu-mlid-924"><a href="http://www.saros-project.org/saros-for-netbeans">Saros for Netbeans</a></li>
+</ul></li>
+<li class="expanded menu-mlid-374"><a href="http://www.saros-project.org/guidelines">Guidelines</a><ul class="menu"><li class="first leaf menu-mlid-375"><a href="http://www.saros-project.org/contribution">Contribution Rules</a></li>
+<li class="leaf has-children menu-mlid-432"><a href="coderules.html" title="Coding Guidelines and Rules">Coding Conventions</a></li>
+<li class="leaf menu-mlid-343"><a href="http://www.saros-project.org/usability" title="Guidelines to ensure Usability">Usability Guidelines</a></li>
+<li class="leaf menu-mlid-433"><a href="http://www.saros-project.org/TicketGuidelines">Ticket Guidelines</a></li>
+<li class="last leaf menu-mlid-692"><a href="http://www.saros-project.org/ci-rules">Jenkins Rules</a></li>
+</ul></li>
+<li class="expanded menu-mlid-931"><a href="http://www.saros-project.org/tools">Tools</a><ul class="menu"><li class="first leaf menu-mlid-357"><a href="http://www.saros-project.org/jtourbus" title="Get involved with JTourBus">JTourBus</a></li>
+<li class="leaf menu-mlid-932"><a href="http://www.saros-project.org/archnemesis">Archnemesis</a></li>
+<li class="leaf menu-mlid-934"><a href="http://www.saros-project.org/sia">Sia</a></li>
+<li class="last leaf menu-mlid-933"><a href="http://www.saros-project.org/sonarqube-gerrit-bridge">SonarQube-Gerrit-Bridge</a></li>
+</ul></li>
+<li class="expanded menu-mlid-341"><a href="http://www.saros-project.org/processes" title="Processes in Saros">Processes</a><ul class="menu"><li class="first leaf menu-mlid-351"><a href="http://www.saros-project.org/review" title="Information about the review process">Review</a></li>
+<li class="leaf menu-mlid-352"><a href="http://www.saros-project.org/ReleaseProcess" title="Our Release Process">Release</a></li>
+<li class="leaf has-children menu-mlid-353"><a href="http://www.saros-project.org/testing" title="Information about the testing process">Testing</a></li>
+<li class="leaf menu-mlid-356"><a href="http://www.saros-project.org/bugtracker" title="Watch the bug tracker">Bug Tracking</a></li>
+<li class="last leaf menu-mlid-354"><a href="http://www.saros-project.org/documentation" title="Information about the documentation process">Documentation</a></li>
+</ul></li>
+<li class="leaf menu-mlid-430"><a href="http://www.saros-project.org/mailingslists">Mailinglists</a></li>
+<li class="leaf menu-mlid-388"><a href="https://sourceforge.net/p/dpp/bugs/" title="">Bug Tracker</a></li>
+<li class="leaf menu-mlid-335"><a href="https://sourceforge.net/projects/dpp/" title="Visit Saros at Sourceforge">Saros@Sourceforge</a></li>
+<li class="expanded active-trail active menu-mlid-915"><a href="gsoc.html" class="active-trail active">Google Summer of Code</a><ul class="menu"><li class="first last leaf menu-mlid-832"><a href="http://www.saros-project.org/gsoc/2015/ideas">2015 - Ideas</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-615"><a href="http://www.saros-project.org/node/129">FAQ in daily practice</a><ul class="menu"><li class="first leaf menu-mlid-610"><a href="http://www.saros-project.org/node/132" title="A change was integrated to master. How can I update my local code?">Update local code to master</a></li>
+<li class="leaf menu-mlid-606"><a href="http://www.saros-project.org/node/130" title="I messed up my local copy of Saros. How can I reset/clean up/revert my changes?">Revert local changes</a></li>
+<li class="leaf menu-mlid-614"><a href="http://www.saros-project.org/upload-new-patch-set" title="Someone discovered an error/failure/typo. How can I upload a new patch set?">Upload a new patch set</a></li>
+<li class="leaf menu-mlid-612"><a href="http://www.saros-project.org/node/133" title="My build failed. What&#039;s wrong with my change?">Building in Gerrit failed!</a></li>
+<li class="leaf menu-mlid-608"><a href="http://www.saros-project.org/gerrit-checkout-patch" title="Someone uploaded a change to Gerrit. How can I test this change?">Get &amp; run someones change</a></li>
+<li class="leaf menu-mlid-678"><a href="http://www.saros-project.org/node/145" title="What is a Change? Patch set? Submit?">Change? Patch set? Submit?</a></li>
+<li class="leaf menu-mlid-670"><a href="http://www.saros-project.org/gerrit-groups-and-permissions" title="Which permissions do I have?">Check Gerrit permissions</a></li>
+<li class="leaf menu-mlid-672"><a href="http://www.saros-project.org/node/142" title="How to delete an unwanted local branch in EGit?">Delete local branch</a></li>
+<li class="leaf menu-mlid-674"><a href="http://www.saros-project.org/node/136">Duplicate Location Error</a></li>
+<li class="leaf menu-mlid-630"><a href="http://www.saros-project.org/gerrit-review" title="Someone wants that I review a change. How to review a change?">Review a change</a></li>
+<li class="leaf menu-mlid-668"><a href="http://www.saros-project.org/node/140" title="How to run Saros STF tests locally?">Run STF tests locally</a></li>
+<li class="leaf menu-mlid-666"><a href="http://www.saros-project.org/node/139" title="I ran an STF test (located in test/stf) and get an error! What&#039;s wrong?">STF tests fail</a></li>
+<li class="leaf menu-mlid-664"><a href="http://www.saros-project.org/node/138" title="How to set up Saros for running local STF tests?">Set up STF tests</a></li>
+<li class="leaf menu-mlid-676"><a href="http://www.saros-project.org/node/144" title="I want automate my testing process. How to write my own STF tests?">Write STF tests</a></li>
+<li class="last leaf menu-mlid-874"><a href="http://www.saros-project.org/git-recipes">Git use-cases</a></li>
+</ul></li>
+</ul></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </aside>  <!-- /#sidebar-first -->
+  
+  </div> <!-- end content-body -->
+<div class="clear"></div>
+<div id="footer" class="clearfix">
+    <div class="clear"></div>
+<div class="region region-footer">
+  <div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="http://www.mi.fu-berlin.de/fb/impressum/" target="_blank">Impressum</a> — <a href="index.html%3Fq=user.html">Internal login</a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+<div class="clear"></div>
+<div id="copyright">Copyright &copy; 2019, Saros</div>
+</div> <!-- /#footer -->
+</div> <!-- /#wrapper -->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+<!--//--><![CDATA[// ><!--
+jQuery(document).ready( function($) { 
+	$( ".known-issue-box" ).accordion({ 
+		active: false, 
+		heightStyle: "content", 
+		collapsible: true 
+	}); 
+	$( ".known-issue-box" ).css( "visibility", "visible" ); });
+//--><!]]>
+</script>  </body>
+
+</html>
